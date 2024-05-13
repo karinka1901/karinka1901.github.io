@@ -10,47 +10,134 @@
     font-weight: normal;
     font-style: normal;
 }
-
 body {
-        font-family: 'WebFont'; /* Use MyCustomFont for the entire body */
-    }
-    
-    h1, h2 {
-        font-family: 'TitleFont'; /* Use MyCustomFont for headings */
-    }
-
-
-h1 {
-    color: navy;
+    font-family: 'WebFont'; /* Use MyCustomFont for the entire body */
+    background-image: url('/Img/background.png');
+    background-size:cover;
+    background-repeat: no-repeat; 
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.6;
+h1, h2 {
+    font-family: 'TitleFont'; /* Use MyCustomFont for headings */
+    font-size: 90px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+/* Custom styles for bottom navigation bar */
+.bottom-nav {
+    background-color: #2f8bb9b7; /* Light grey background */
+    position: fixed;
+    bottom: 0;
+    width: 50px;
+    padding: 15px;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+/* Custom styles for button in bottom navigation */
+.btn-bottom {
+    float: left; /* Align button to the left */
 }
 
-nav ul li a {
-    color: navy;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px; /* Adjust the height as needed */
+    background-color: #d89dc8; /* Dark grey background */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.5); /* Shadow at the bottom */
 }
 
-.button-spacing {
-    margin-right: 10px; /* Adjust the right margin as needed */
+
+
+/* BUTTON*/
+.button-14 {
+  background-image: linear-gradient(#ff78fd ,#f262ff);
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  box-shadow: rgba(255,255,255,.6) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #23c4c4;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember",Arial,sans-serif;
+  font-size: 14px;
+  height: 29px;
+  font-size: 13px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 11px;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
 }
-.button-container {
+
+.button-14:active {
+  border-bottom-color: #a2a6ac;
+}
+
+.button-14:active:hover {
+  border-bottom-color: #a2a6ac;
+}
+
+.button-14:hover {
+  border-color: #a2a6ac #979aa1 #82858a;
+}
+
+.button-14:focus {
+  border-color: #e77600;
+  box-shadow: rgba(228, 121, 17, .5) 0 0 3px 2px;
+  outline: 0;
+}
+
+/*//////////////////////////////////////////////////////////////////////////*/
+.clock {
+    color: #000000; /* Text color */
+    font-size: 14px; /* Font size */
+    margin-left: auto;
+    margin-right: 10px;
+}
+/*//////////////////////////////////////////////////////////////////////////*/
+.popup-menu {
+    display: none;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    bottom: 40px;
+    left: 10px;
+    width: 300px;
+    height: 500px;
+    border: 1px solid #646464; /* Dark grey border */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Styles for the title bar */
+.popup-menu .title-bar {
+    padding: 8px;
+    background-color: #4a90e2; /* Blue title bar */
+    color: #ffffff; /* White text */
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Styles for the popup content */
+.popup-menu .content {
+    padding: 10px;
+    background-color: #f0f0f0; /* Light grey background for content */
+    height:437px;
+}
+
+.popup-image {
+    width: 30%; /* Ensure the image fills the popup width */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #ccc; /* Optional border around the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
 }
