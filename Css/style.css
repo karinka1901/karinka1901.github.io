@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'WebFont';
+    src: url('/Fonts/VCR_OSD_MONO.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TitleFont';
+    src: url('/Fonts/KarmaFuture.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+        font-family: 'WebFont'; /* Use MyCustomFont for the entire body */
+    }
+    
+    h1, h2 {
+        font-family: 'TitleFont'; /* Use MyCustomFont for headings */
+    }
+
+
+h1 {
+    color: navy;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: navy;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.button-spacing {
+    margin-right: 10px; /* Adjust the right margin as needed */
+}
+.button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
