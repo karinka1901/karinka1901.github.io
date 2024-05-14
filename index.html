@@ -21,22 +21,46 @@
                     <img id ="PurpleFolder" src="/Img/purple_folder.png" alt="" onclick="openn(document.getElementById('Folder'))">
                     <img id ="GreenFolder" src="/Img/green_folder.png" alt="">
                     <img id ="BlueFolder" src="/Img/blue_folder.png" alt="">
-                    
                 </div>
-                <div class="GitHubIcon">
-                    <img id="githubIcon" src="/Img/github.png" alt="" onclick="openWeb('GitHub')">
-                    <p>GitHub</p>
-                    <!-- <img id="MyPic" src="/Img/Haunted forest(7).png" alt=""> -->
+                <div id="AboutMe" class = "AboutME">
+                    <div id = "Me" class = "Mypic draggable">
+                     <img id="MyPic"  src="/Img/Haunted forest(7).png" alt="">
+                     <button id="closeMEBtn" class="window-close-Me" onclick="closeWindow(document.getElementById('AboutMe'))">X</button>
+                    </div>
+                    <div class = "Mynote draggable">
+                        <img id="MyNote"  src="/Img/Skills.png" alt="">
+                        <!-- <p id="MyNote">Hi! My name is Karin Domagalska and I am a Game Development student at the Metropolia University of Applied Sciences. I am passionate about creating games. </p> -->
+                       </div>
+                       <div class = "MyEdu draggable">
+                        <img id="Myedu"  src="/Img/Education.png" alt="">
+                        <!-- <p id="MyNote">Hi! My name is Karin Domagalska and I am a Game Development student at the Metropolia University of Applied Sciences. I am passionate about creating games. </p> -->
+                       </div>
+                       <div class = "MyInfo draggable">
+                        <img id="Myinfo"  src="/Img/aboutme.png" alt="">
+                        <!-- <p id="MyNote">Hi! My name is Karin Domagalska and I am a Game Development student at the Metropolia University of Applied Sciences. I am passionate about creating games. </p> -->
+                       </div>
                 </div>
-                <div class="ItchIcon">
-                    <img id="itchIcon" src="/Img/itchLogo.png" alt="" onclick="openWeb('Itch.io')">
-                    <p>Itch.io</p>
-                    <!-- <img id="MyPic" src="/Img/Haunted forest(7).png" alt=""> -->
-                </div>
-                <div class="DesktopFolder">
-                    <img id="game-folder-desk" src="/Img/folder.png" alt="Game Folder" class="game-image" onclick="openn(document.getElementById('Portfolio'))">
-                    <p>Portfolio</p>
-                    <!-- <img id="game-folder-desk" src="/Img/folder.png" alt="Game Folder" class="game-image"> -->
+                <div class="DesktopIcons">
+                    <div class="GitHubIcon">
+                        <img id="githubIcon" src="/Img/github.png" alt="" onclick="openWeb('GitHub')">
+                        <p>GitHub</p>
+                        <!-- <img id="MyPic" src="/Img/Haunted forest(7).png" alt=""> -->
+                    </div>
+                    <div class="ItchIcon">
+                        <img id="itchIcon" src="/Img/itchLogo.png" alt="" onclick="openWeb('Itch.io')">
+                        <p>Itch.io</p>
+                    </div>
+
+                    <div class="AboutMeIcon">
+                        <img id="aboutmeIcon" src="/Img/me.png" alt="" onclick="openn(document.getElementById('AboutMe'))">
+                        <p>About Me</p>
+                        <!-- <img id="MyPic" src="/Img/Haunted forest(7).png" alt=""> -->
+                    </div>
+                    <div class="DesktopFolder">
+                        <img id="game-folder-desk" src="/Img/folder.png" alt="Game Folder" class="game-image" onclick="openn(document.getElementById('Portfolio'))">
+                        <p>Portfolio</p>
+                        <!-- <img id="game-folder-desk" src="/Img/folder.png" alt="Game Folder" class="game-image"> -->
+                    </div>
                 </div>
                <!-- /* //////////////////Daggermeister Folder///////////////////////// */ -->
                 <div id="Folder" class="Folder-Window draggable">
