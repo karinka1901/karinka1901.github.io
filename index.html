@@ -14,9 +14,39 @@
             <div class="col-12 text-center mt-5">
                 <h1>Karin Domagalska</h1>
                 <p>Game Development Student</p>
+                <div class="GitHubIcon">
+                    <img src="/Img/github.png" alt="" onclick="openWeb('GitHub')">
+                    <img id="MyPic" src="/Img/Haunted forest(7).png" alt="">
+                </div>
+                    
+                <div id="Folder" class="Folder-Window draggable">
+                    <div class="folder-window-header "">
+                        <div class="folder-window-title">Daggermeister </div>
+                        <button class="window-close-btn" onclick="closeGameWindow()">X</button>
+                    </div>
+                    <!-- <button id="gameButton" class="button-14" type="button" onclick="startGame()">Daggermeister</button> -->
+                    <img id="gameButton" src="/Img/DaggermeisterIcon.png" alt="Game Icon" class="game-icon" onclick="startGame()">
+                    <p>Click To Play</p>
+
+                    <p>Daggermeister is a 2D platformer that combines precision dagger-throwing and teleportation. The goal is to collect 6 blue gems in orfder to unlock the next level. The game is heavily inspired by “Daggerhood”. It was made in Unity as a part of a school project.</p>
+                    <img id ="video-button" src="/Img/video.jpg" alt="" onclick="openWeb('Youtube')">
+                </div>
+
+             
+           
+            <div id="gameContainer" class="window-container draggable">
+                <div class="AnotherWindow">
+                    <div class="window-header "">
+                        <div class="window-title">Daggermeister </div>
+                        <button class="window-close-btn" onclick="closeWindow()">X</button>
+                    </div>
+                    <div class="window-content ">
+                        <iframe id="gameFrame" src="" style="border:0; width:960px; height:700px;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                    </div>
+                </div>
+                
+           
             </div>
-            <!-- <iframe allow="autoplay; fullscreen" src="https://karinka1901.github.io/game/index.html" style="border:0px #000000 none;" name="Pong: Star Wars Remix" scrolling="no" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" marginwidth="320px" height="540px" width="960px"></iframe> -->
-        </div>
 
         <div class="taskbar">
             <button id="startButton" button class=".button-14" type="button">Start</button>
@@ -28,8 +58,9 @@
                 My Portfolio
             </div>
             <div class="content">
-                
-
+                <img id="game-folder" src="/Img/folder.png" alt="Game Folder" class="game-image" onclick="openGameFolder()">
+                <img id="game-folder" src="/Img/folder.png" alt="Game Folder" class="game-image">
+            
                 <!-- <img src="/Img/logo.png" alt="Popup Image" class="popup-image"> -->
             </div>
         </div>

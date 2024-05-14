@@ -22,6 +22,14 @@ h1, h2 {
     font-size: 90px;
 }
 
+.GitHubIcon{
+    cursor: pointer;
+}
+
+#MyPic{
+    width: 20%;
+}
+
 /* Custom styles for bottom navigation bar */
 .bottom-nav {
     background-color: #2f8bb9b7; /* Light grey background */
@@ -140,4 +148,100 @@ h1, h2 {
     height: auto; /* Maintain aspect ratio */
     border: 1px solid #ccc; /* Optional border around the image */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+#game-folder{
+    width: 30%;
+    cursor: pointer;
+}
+
+#gameButton{
+    margin-top: 20px;
+    cursor: pointer;
+    width: 30%;
+    border: 3px solid #646464; /* Dark grey border */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    
+}
+#video-button{
+    width: 10%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.folder-window-header{
+    display: flex;
+    /* flex: 1; */
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f99dc5;
+    color: #fff;
+    /* margin-left: -10.8px; */
+    margin-top: 1px;
+}
+.Folder-Window{
+/* display: none; */
+    /* position: absolute; */
+    /* bottom: 40px; */
+    /* left: 10px; */
+    width: 550px;
+    height: 500px;
+    border: 1px solid #646464; /* Dark grey border */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    background-color: #c9e8f7c8;
+    cursor :move;
+    display: none;
+
+}
+
+.draggable {
+    position: absolute;
+    cursor: move; /* Change cursor to indicate draggable element */
+    /* Additional styling as needed */
+}
+.Video-Window{
+    width: auto;
+    background-color: #ed0096;
+}
+
+
+/*//////////////////////////////////////////game window//////////////////////////////////////////*/
+.window-container{
+    background-color: #c2d1e8e7;
+    border: 3px solid #646464;
+    width: auto;
+    height: auto;
+}
+.window-container{
+    display: none; /* Hide the game container */
+           
+            /* left: 0; */
+            /* top: 0; */
+            z-index: 1000;
+            cursor: move;
+        
+}
+
+
+.window-header {
+    display: flex;
+    /* flex: 1; */
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f99dc5;
+    color: #fff;
+    /* margin-left: -10.8px; */
+    margin-top: 1px;
+}
+
+.window-close-btn {
+    cursor: pointer;
+    background-color: #ed0096;
+    color: #fff;
+    border: none;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    padding: 3px 10px;
+    border-radius: 3px;
+    margin-right: 5px; /* Add margin to push button away from the title */
 }
