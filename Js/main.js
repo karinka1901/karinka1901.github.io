@@ -1,6 +1,3 @@
-let isDragging = false;
-let offsetX, offsetY;
-let activeElement = null;
 
 function updateTime() {
     const now = new Date();
@@ -36,24 +33,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
-
-function closeWindow() {
+//////////////////////////////////////////////////////////////////
+function closeWindow(wElement) {
     // Hide the game container
-    document.getElementById('gameContainer').style.display = 'none';
+   wElement.style.display = 'none';
 // document.getElementById('gameW').classList.add('hidden');
 
     // Reset the iframe src
     document.getElementById('gameFrame').src = "";
 }
 
-function closeGameWindow(){
-    document.getElementById('Folder').style.display = 'none';
+
+function openn(e){
+    e.style.display = 'block';
+    e.style.zIndex = '1000';
+   
 }
 
-function openGameFolder(){
-    document.getElementById('Folder').style.display = 'block';
-}
-
+/////////////////////////////////////////////////////////////
 function startGame() {
     // Show the game container
     document.getElementById('gameContainer').style.display = 'block';
@@ -63,6 +60,15 @@ function startGame() {
     document.getElementById('gameFrame').src = "https://karinka1901.github.io/Game/index.html";
 }
 
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+let isDragging = false;
+let activeElement = null;
+let offsetX = 0;
+let offsetY = 0;
+
 document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('mousedown', handleMouseDown);
     document.addEventListener('mousemove', handleMouseMove);
@@ -71,11 +77,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function handleMouseDown(e) {
     const target = e.target;
-    if (target.classList.contains('draggable')) {
+    const draggableElement = findDraggableElement(target);
+    if (draggableElement) {
+        bringToFront(draggableElement);
         isDragging = true;
-        activeElement = target;
-        offsetX = e.clientX - activeElement.offsetLeft;
-        offsetY = e.clientY - activeElement.offsetTop;
+        activeElement = draggableElement;
+        offsetX = e.clientX - activeElement.getBoundingClientRect().left;
+        offsetY = e.clientY - activeElement.getBoundingClientRect().top;
     }
 }
 
@@ -91,31 +99,36 @@ function handleMouseUp() {
     activeElement = null;
 }
 
-
-function openVideo(){
-    document.getElementById('videoBox').style.display = 'block';
+function findDraggableElement(element) {
+    // Traverse up the DOM tree to find an element with the 'draggable' class
+    while (element) {
+        if (element.classList.contains('draggable')) {
+            return element;
+        }
+        element = element.parentElement;
+    }
+    return null;
 }
 
-// function openWeb(){
-//     const websiteUrl = "https://github.com/karinka1901"; 
-//     const width = 800;
-//     const height = 600;
-//     const left = (window.innerWidth - width) / 2;
-//     const top = (window.innerHeight - height) / 2;
-//     const features = `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=yes`;
+function bringToFront(element) {
+    // Get the highest z-index among all draggable elements and set the clicked element's z-index
+    const draggableElements = document.querySelectorAll('.draggable');
+    let maxZIndex = 0;
 
-//     // Open the popup window with the specified URL and parameters
-//     if(getElementById('video-button'))
-//     const popupWindow = window.open(websiteUrl, "_blank", features);
+    draggableElements.forEach(el => {
+        const zIndex = parseFloat(window.getComputedStyle(el).zIndex);
+        if (!isNaN(zIndex) && zIndex > maxZIndex) {
+            maxZIndex = zIndex;
+        }
+    });
 
-//     // Focus the popup window (bring it to the front if already open)
-//     if (popupWindow) {
-//         popupWindow.focus();
-//     } else {
-//         alert("Popup blocked! Please allow popups for this website.");
-//     }
+    // Set the z-index of the clicked element to be one unit higher than the highest z-index
+    element.style.zIndex = maxZIndex + 1;
+}
 
-//}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
 
 function openWeb(websiteId) {
     let websiteUrl;
@@ -127,6 +140,9 @@ function openWeb(websiteId) {
             break;
         case "Youtube":
             websiteUrl = "https://youtu.be/RFExoLWc8Ec?si=Ir5IQ6ccOlIvdUJP"; // URL for other button
+            break;
+        case "Itch.io":
+            websiteUrl = "https://karinka1901.itch.io/"; // URL for other button
             break;
         
     }
@@ -147,4 +163,15 @@ function openWeb(websiteId) {
     } else {
         alert("Popup blocked! Please allow popups for this website.");
     }
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+function minGameWindow(windowElement, tabElement) {
+    windowElement.style.display = 'none';
+    tabElement.style.display = 'block';
+}
+
+function reopenWindow(windowElement, tabElement){
+    windowElement.style.display = 'block';
+    tabElement.style.display = 'none';
 }

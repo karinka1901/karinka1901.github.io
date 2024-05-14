@@ -14,42 +14,62 @@
             <div class="col-12 text-center mt-5">
                 <h1>Karin Domagalska</h1>
                 <p>Game Development Student</p>
-                <div class="GitHubIcon">
-                    <img src="/Img/github.png" alt="" onclick="openWeb('GitHub')">
-                    <img id="MyPic" src="/Img/Haunted forest(7).png" alt="">
-                </div>
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/RFExoLWc8Ec?si=kveNybWj7Yepd-D9" title="YouTube video player" frameborder="0"  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                <div id="Portfolio" class="PortfolioF draggable">
+                    <img id ="PortfolioTab" src="/Img/PortfolioTab.png" alt="">
+                    <button id="closeBtn" class="window-close-btn1" onclick="closeWindow(document.getElementById('Portfolio'))">X</button>
+                    <img id ="PurpleFolder" src="/Img/purple_folder.png" alt="" onclick="openn(document.getElementById('Folder'))">
+                    <img id ="GreenFolder" src="/Img/green_folder.png" alt="">
+                    <img id ="BlueFolder" src="/Img/blue_folder.png" alt="">
                     
+                </div>
+                <div class="GitHubIcon">
+                    <img id="githubIcon" src="/Img/github.png" alt="" onclick="openWeb('GitHub')">
+                    <p>GitHub</p>
+                    <!-- <img id="MyPic" src="/Img/Haunted forest(7).png" alt=""> -->
+                </div>
+                <div class="ItchIcon">
+                    <img id="itchIcon" src="/Img/itchLogo.png" alt="" onclick="openWeb('Itch.io')">
+                    <p>Itch.io</p>
+                    <!-- <img id="MyPic" src="/Img/Haunted forest(7).png" alt=""> -->
+                </div>
+                <div class="DesktopFolder">
+                    <img id="game-folder-desk" src="/Img/folder.png" alt="Game Folder" class="game-image" onclick="openn(document.getElementById('Portfolio'))">
+                    <p>Portfolio</p>
+                    <!-- <img id="game-folder-desk" src="/Img/folder.png" alt="Game Folder" class="game-image"> -->
+                </div>
+               <!-- /* //////////////////Daggermeister Folder///////////////////////// */ -->
                 <div id="Folder" class="Folder-Window draggable">
                     <div class="folder-window-header "">
-                        <div class="folder-window-title">Daggermeister </div>
-                        <button class="window-close-btn" onclick="closeGameWindow()">X</button>
+                        <button id="closeBtn" class="window-close-btn" onclick="closeWindow(document.getElementById('Folder'))">X</button>
+                        <button id="MinBtn" class="window-min-btn" onclick="minGameWindow(document.getElementById('Folder'), document.getElementById('minButton'))">_</button>
+                        <img src="/Img/tab.png" alt="" class="Folder ">
+                        <!-- <img id="gameButton" src="/Img/DaggermeisterIcon.png" alt="Game Icon" class="game-icon" onclick="startGame()"> -->
+                        <iframe id="DVideo"  width="560" height="315" src="https://www.youtube.com/embed/RFExoLWc8Ec?si=kveNybWj7Yepd-D9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p id="DaggerText">Daggermeister is a 2D platformer that combines precision dagger-throwing and teleportation. The goal is to collect 6 blue gems in orfder to unlock the next level. The game is heavily inspired by “Daggerhood”. It was made in Unity as a part of a school project.</p>
+                        <button id="playDButton" button class=".button-14" type="button" onclick="startGame()">Play</button>
+                        <!-- <img id ="video-button" src="/Img/video.jpg" alt="" onclick="openWeb('Youtube')"> -->
                     </div>
-                    <!-- <button id="gameButton" class="button-14" type="button" onclick="startGame()">Daggermeister</button> -->
-                    <img id="gameButton" src="/Img/DaggermeisterIcon.png" alt="Game Icon" class="game-icon" onclick="startGame()">
-                    <p>Click To Play</p>
-
-                    <p>Daggermeister is a 2D platformer that combines precision dagger-throwing and teleportation. The goal is to collect 6 blue gems in orfder to unlock the next level. The game is heavily inspired by “Daggerhood”. It was made in Unity as a part of a school project.</p>
-                    <img id ="video-button" src="/Img/video.jpg" alt="" onclick="openWeb('Youtube')">
-                </div>
-
-             
-           
+                  
+                    
+                </div> 
+            <!-- /////////////////////Daggermeister Game///////////////////////// -->
             <div id="gameContainer" class="window-container draggable">
-                <div class="AnotherWindow">
-                    <div class="window-header "">
-                        <div class="window-title">Daggermeister </div>
-                        <button class="window-close-btn" onclick="closeWindow()">X</button>
-                    </div>
-                    <div class="window-content ">
-                        <iframe id="gameFrame" src="" style="border:0; width:960px; height:700px;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-                    </div>
+                <div class="window-header ""></div>
+                <button id="closeBtn" class="window-close-btn" onclick="closeWindow(document.getElementById('gameContainer'))">X</button>
+                <button id="MinBtn" class="window-min-btn" onclick="minGameWindow(document.getElementById('gameContainer'), document.getElementById('minButton1'))">_</button>
+                <img id="GameTab" src="/Img/tab.png" alt="" class="Folder ">
+                    <iframe id="gameFrame" src="" style="border:0; width:960px; height:700px;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
                 </div>
-                
-           
             </div>
+
+
 
         <div class="taskbar">
             <button id="startButton" button class=".button-14" type="button">Start</button>
+            <button id="minButton" button class=".button-14" type="button" onclick="reopenWindow(document.getElementById('Folder'), document.getElementById('minButton'))">GameInfo</button>
+            <button id="minButton1" button class=".button-14" type="button" onclick="reopenWindow(document.getElementById('gameContainer'), document.getElementById('minButton1'))">Game</button>
+            <button id="minButton2" button class=".button-14" type="button" onclick="reopenWindow(document.getElementById('Portfolio'), document.getElementById('minButton2'))">Portfolio</button>
             <div class="clock"></div>
         </div>
         <div id="popupMenu" class="popup-menu">
@@ -58,7 +78,7 @@
                 My Portfolio
             </div>
             <div class="content">
-                <img id="game-folder" src="/Img/folder.png" alt="Game Folder" class="game-image" onclick="openGameFolder()">
+                <img id="game-folder" src="/Img/folder.png" alt="Game Folder" class="game-image" onclick="openn(document.getElementById('Folder'))">
                 <img id="game-folder" src="/Img/folder.png" alt="Game Folder" class="game-image">
             
                 <!-- <img src="/Img/logo.png" alt="Popup Image" class="popup-image"> -->

@@ -15,6 +15,7 @@ body {
     background-image: url('/Img/background.png');
     background-size:cover;
     background-repeat: no-repeat; 
+    position: relative;
 }
 
 h1, h2 {
@@ -22,17 +23,116 @@ h1, h2 {
     font-size: 90px;
 }
 
-.GitHubIcon{
+.PortfolioF{
+    position: absolute;
+    left: 33%;
+    width: auto;
+    height: auto;
+    background-color: #e77600;
+    display: none;
+}
+
+#PortfolioTab{
+    height: 600px;
+}
+
+#PurpleFolder{
+    position: absolute;
+    width: 18%;
+    margin-top: -68%;
+    margin-left: -42%;
     cursor: pointer;
+}
+
+#BlueFolder{
+    position: absolute;
+    width: 18%;
+    margin-top: -68%;
+    margin-left: -9%;
+    cursor: pointer;
+}
+
+#GreenFolder{
+    position: absolute;
+    width: 18%;
+    margin-top: -68%;
+    margin-left: 25%;
+    cursor: pointer;
+}
+
+.window-close-btn1{
+    position:absolute;
+    margin-top: 10px;
+    margin-left: -33px;
+    height: 4%;
+    border: 1px solid #000000;
+    width: 3%;
+    background-color: #f2a9db;
+
+}
+.window-min-btn1{
+    position:absolute;
+    margin-top: 10px;
+    margin-left: -33px;
+    height: 4%;
+    border: 1px solid #000000;
+    width: 3%;
+    background-color: #f2a9db;
+
+}
+
+
+.GitHubIcon{
+    position: absolute;
+    top: 360px;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+ 
+    background-color: #e7770000;
+    cursor: pointer;
+    /* display: none; */
+
+}
+
+#githubIcon{
+    width: 100%
+   
+}
+
+.ItchIcon{
+    position: absolute;
+    top: 530px;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+ 
+    background-color: #e7770000;
+    cursor: pointer;
+}
+
+#itchIcon{
+    width: 100%;
 }
 
 #MyPic{
     width: 20%;
 }
+.DesktopFolder{
+    background-color: #e7770000;
+    position: absolute;
+    width: 90px;
+    bottom: auto;
+    left: 30px;
+}
 
+#game-folder-desk{
+    width: 100%;
+    cursor: pointer;
+}
 /* Custom styles for bottom navigation bar */
 .bottom-nav {
-    background-color: #2f8bb9b7; /* Light grey background */
+    background-color:#82aecb;
     position: fixed;
     bottom: 0;
     width: 50px;
@@ -51,7 +151,7 @@ h1, h2 {
     left: 0;
     width: 100%;
     height: 35px; /* Adjust the height as needed */
-    background-color: #d89dc8; /* Dark grey background */
+    background-color: #82aecb;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -129,7 +229,7 @@ h1, h2 {
 /* Styles for the title bar */
 .popup-menu .title-bar {
     padding: 8px;
-    background-color: #4a90e2; /* Blue title bar */
+    background-color: #82aecb;
     color: #ffffff; /* White text */
     font-weight: bold;
     border-top-left-radius: 5px;
@@ -139,7 +239,7 @@ h1, h2 {
 /* Styles for the popup content */
 .popup-menu .content {
     padding: 10px;
-    background-color: #f0f0f0; /* Light grey background for content */
+    background-color: #ffebe4;/* Light grey background for content */
     height:437px;
 }
 
@@ -150,23 +250,98 @@ h1, h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
 }
 
+#minButton{
+    height:auto;
+    margin-left: 10px;
+    width: auto;
+    display: none;
+}
+#minButton1{
+    height:auto;
+    margin-left: 10px;
+    width: auto;
+    display: none;
+}
+#minButton2{
+    height:auto;
+    margin-left: 10px;
+    width: auto;
+    display: none;
+}
+
+
+
+/*//////////////////////////////////////////game folder/////////////////////////////////////////*/
 #game-folder{
     width: 30%;
     cursor: pointer;
 }
 
 #gameButton{
-    margin-top: 20px;
+    margin-top: 100px;
+    margin-left: 300px;
     cursor: pointer;
     width: 30%;
     border: 3px solid #646464; /* Dark grey border */
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    position: absolute;
     
 }
 #video-button{
     width: 10%;
     border-radius: 10px;
+    margin-top: 70%;
+    margin-left: 47%;
     cursor: pointer;
+    position: absolute;
+}
+
+#DVideo{
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 12%;
+}
+
+#DaggerText{
+    position: absolute  ;
+    margin-top: 55%;
+    margin-left: auto;
+    color: #000000;
+    font-size: 20px;
+
+}
+#DaggerText2{
+    position: absolute  ;
+    text-align: center;
+    margin-top: 82%;
+    margin-left: 43%;
+    color: #000000;
+    font-size: 20px;
+}
+#playDButton{
+    position: absolute;
+    margin-top: 80%;
+    margin-left: 47%;
+    cursor: pointer;
+    width: 10%;
+    /* background-color: #ffebe4;
+    border: 1px solid #000000; */
+   
+}
+
+#MinBtn{
+    /* display: none; */
+    position: absolute;
+    margin-top: 12px;
+    /* margin-left: 300px; */
+    cursor: pointer;
+    width: 30px;
+    border: 1px solid #000000;
+    width: 3%;
+    height: 3.5%;
+    background-color: #a9ccf2;
+    margin-left: 87.36%;
+    margin-top: 15px;
 }
 
 .folder-window-header{
@@ -179,49 +354,82 @@ h1, h2 {
     /* margin-left: -10.8px; */
     margin-top: 1px;
 }
-.Folder-Window{
+#Folder{
 /* display: none; */
     /* position: absolute; */
     /* bottom: 40px; */
     /* left: 10px; */
-    width: 550px;
-    height: 500px;
+    width: auto;
+    height: auto;
     border: 1px solid #646464; /* Dark grey border */
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    background-color: #c9e8f7c8;
+    background-color: #000000;
     cursor :move;
     display: none;
+    position: absolute;
+    /* z-index: 1000; */
+    pointer-events: auto; 
+    left: 27%;
+    top: 100px;
+    /* margin-top: 500px; */
 
 }
 
 .draggable {
-    position: absolute;
-    cursor: move; /* Change cursor to indicate draggable element */
-    /* Additional styling as needed */
+    /* position: absolute; */
+    cursor: move; 
 }
 .Video-Window{
     width: auto;
     background-color: #ed0096;
 }
 
+.window-close-btn{
+    cursor: pointer;
+    position: absolute  ;
+    margin-top: 15px;
+    height: 3.5%;
+    margin-left: 94.9%;
+    border: 1px solid #000000;
+    width: 3%;
+    background-color: #f2a9db;
+}
+
 
 /*//////////////////////////////////////////game window//////////////////////////////////////////*/
 .window-container{
-    background-color: #c2d1e8e7;
+    background-color: hsla(217, 14%, 41%, 0);
     border: 3px solid #646464;
     width: auto;
     height: auto;
-}
-.window-container{
-    display: none; /* Hide the game container */
-           
-            /* left: 0; */
-            /* top: 0; */
-            z-index: 1000;
-            cursor: move;
+    position: absolute;
+    left: 25%;
+    top: 100px;
+    display: none; 
+    /* z-index: 1000; */
+    cursor: move;
         
 }
 
+#GameTab{
+    /* width: 58%;
+    /* height: 800px; */ 
+    width:1000px ;
+    height: 750px;
+    /* height: 200px; */
+
+}
+
+#gameFrame{
+    position: absolute;
+
+    /* margin-right: 100%;
+    margin-left: -46.7%;
+    margin-top: -100%;
+    width: 50%; */
+    margin-left: -98%;
+    margin-top: 5%;
+}
 
 .window-header {
     display: flex;
@@ -234,14 +442,3 @@ h1, h2 {
     margin-top: 1px;
 }
 
-.window-close-btn {
-    cursor: pointer;
-    background-color: #ed0096;
-    color: #fff;
-    border: none;
-    margin-top: 2px;
-    margin-bottom: 3px;
-    padding: 3px 10px;
-    border-radius: 3px;
-    margin-right: 5px; /* Add margin to push button away from the title */
-}
