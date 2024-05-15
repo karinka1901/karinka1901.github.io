@@ -28,7 +28,7 @@ h1, h2 {
     left: 33%;
     width: auto;
     height: auto;
-    background-color: #e77600;
+    background-color: #f8c7f4;
     display: none;
 }
 
@@ -152,7 +152,7 @@ h1, h2 {
 
 .window-close-Me{
     position: absolute;
-    margin-top: 8px;
+    margin-top: 6px;
     cursor: pointer;
     margin-left: -5.5%;
     height: 4.4%;
@@ -190,7 +190,7 @@ h1, h2 {
     background-color: #e38ec400;
     width: 30%;
     left: 36.6%;
-    margin-top: 24%;
+    top: 295%;
 }
 
 
@@ -517,4 +517,116 @@ h1, h2 {
     /* margin-left: -10.8px; */
     margin-top: 1px;
 }
+
+
+
+/*//////////////////////////////////////////DANKSOLES//////////////////////////////////////////*/
+.DankSole{
+    width: auto;
+    height: auto;
+    background-color: #00000000;
+    cursor :move;
+    display: none;
+    position: absolute;
+    /* z-index: 1000; */
+    pointer-events: auto; 
+    left: 27%;
+    top: 100px;
+}
+
+.dank-header{
+    display: flex;
+    /* flex: 1; */
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f99dc5;
+    color: #fff;
+    /* margin-left: -10.8px; */
+    margin-top: 1px;
+}
+
+#DankSolesVideo{
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 12%;
+}
+
+#DankSolesText{
+    position: absolute  ;
+    margin-top: 55%;
+    margin-left: auto;
+    color: #000000;
+    font-size: 20px;
+    left: 30px;
+}
+
+#DSButton{
+    position: absolute;
+    margin-top: 80%;
+    margin-left: 42%;
+    cursor: pointer;
+    width: auto;
+}
+
+.window-close-btn-DS{
+    position: absolute;
+    margin-top: 12px;
+    cursor: pointer;
+    margin-left:91.8%;
+    height: 4.2%;
+
+    border: 1px solid #000000;
+    width: 3.5%;
+
+    background-color: #f2a9db;
+}
+/*/////////////////////////////////////////DANKSOLES//////////////////////////////////////////*/
+.VR{
+    width: auto;
+    height: auto;
+    background-color: #00000000;
+    cursor :move;
+    display: none;
+    position: absolute;
+    /* z-index: 1000; */
+    pointer-events: auto; 
+    left: 27%;
+    top: 100px;
+}
+
+.vr-header{
+    display: flex;
+    /* flex: 1; */
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f99dc5;
+    color: #fff;
+    /* margin-left: -10.8px; */
+    margin-top: 1px;
+}
+
+#vrVideo{
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 12%;
+}
+
+#VRText{
+    position: absolute  ;
+    margin-top: 55%;
+    margin-left: auto;
+    color: #000000;
+    font-size: 20px;
+    left: 30px;
+}
+
+#VRButton{
+    position: absolute;
+    margin-top: 82%;
+    margin-left: 42%;
+    cursor: pointer;
+    width: auto;
+}
+
+
 

@@ -144,7 +144,13 @@ function openWeb(websiteId) {
         case "Itch.io":
             websiteUrl = "https://karinka1901.itch.io/"; // URL for other button
             break;
-        
+        case "DankSoles":
+            websiteUrl = "https://karinka1901.itch.io/dank-sole"; // URL for other button
+            break;
+        case "VR":
+            websiteUrl = "https://karinka1901.itch.io/haunted-forest-vr"; // URL for other button
+            break;
+    
     }
 
     // Specify the dimensions and other parameters for the popup window

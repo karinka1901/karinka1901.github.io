@@ -19,8 +19,8 @@
                     <img id ="PortfolioTab" src="/Img/PortfolioTab.png" alt="">
                     <button id="closeBtn" class="window-close-btn1" onclick="closeWindow(document.getElementById('Portfolio'))">X</button>
                     <img id ="PurpleFolder" src="/Img/purple_folder.png" alt="" onclick="openn(document.getElementById('Folder'))">
-                    <img id ="GreenFolder" src="/Img/green_folder.png" alt="">
-                    <img id ="BlueFolder" src="/Img/blue_folder.png" alt="">
+                    <img id ="GreenFolder" src="/Img/green_folder.png" alt="" >
+                    <img id ="BlueFolder" src="/Img/blue_folder.png" alt="" onclick="openn(document.getElementById('Dank-sole'))"></img>
                 </div>
                 <div id="AboutMe" class = "AboutME">
                     <div id = "Me" class = "Mypic draggable">
@@ -67,26 +67,45 @@
                     <div class="folder-window-header "">
                         <button id="closeBtn" class="window-close-btn" onclick="closeWindow(document.getElementById('Folder'))">X</button>
                         <button id="MinBtn" class="window-min-btn" onclick="minGameWindow(document.getElementById('Folder'), document.getElementById('minButton'))">_</button>
-                        <img src="/Img/tab.png" alt="" class="Folder ">
+                        <img src="/Img/tab.png" alt="" class="Folder "></img>
                         <!-- <img id="gameButton" src="/Img/DaggermeisterIcon.png" alt="Game Icon" class="game-icon" onclick="startGame()"> -->
                         <iframe id="DVideo"  width="560" height="315" src="https://www.youtube.com/embed/RFExoLWc8Ec?si=kveNybWj7Yepd-D9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <p id="DaggerText">Daggermeister is a 2D platformer that combines precision dagger-throwing and teleportation. The goal is to collect 6 blue gems in orfder to unlock the next level. The game is heavily inspired by “Daggerhood”. It was made in Unity as a part of a school project.</p>
                         <button id="playDButton" button class=".button-14" type="button" onclick="startGame()">Play</button>
                         <!-- <img id ="video-button" src="/Img/video.jpg" alt="" onclick="openWeb('Youtube')"> -->
                     </div>
-                  
-                    
                 </div> 
             <!-- /////////////////////Daggermeister Game///////////////////////// -->
             <div id="gameContainer" class="window-container draggable">
                 <div class="window-header ""></div>
                 <button id="closeBtn" class="window-close-btn" onclick="closeWindow(document.getElementById('gameContainer'))">X</button>
-                <button id="MinBtn" class="window-min-btn" onclick="minGameWindow(document.getElementById('gameContainer'), document.getElementById('minButton1'))">_</button>
+                <!-- <button id="MinBtn" class="window-min-btn" onclick="minGameWindow(document.getElementById('gameContainer'), document.getElementById('minButton1'))">_</button> -->
                 <img id="GameTab" src="/Img/tab.png" alt="" class="Folder ">
                     <iframe id="gameFrame" src="" style="border:0; width:960px; height:700px;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
                 </div>
             </div>
-
+     <!-- /////////////////////DankSole Game///////////////////////// -->
+            <div id="Dank-sole" class="DankSole draggable">
+                <div class="dank-header "">
+                    <button id="DScloseBtn" class="window-close-btn-DS" onclick="closeWindow(document.getElementById('Dank-sole'))">X</button>
+                    <!-- <button id="MinBtn" class="window-min-btn" onclick="minGameWindow(document.getElementById('Dank-sole'), document.getElementById('minButton'))">_</button> -->
+                    <img src="/Img/tab.png" alt="" class="Dank-Solee ">
+                    <iframe id="DankSolesVideo" width="560" height="315" src="https://www.youtube.com/embed/Z82WRHcB6hw?si=qie1p6fjbOwRgBdh" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p id="DankSolesText">A short souls like clone made in Unreal Engine 5 as a part of the school project. Created by Markku Inkinen and Karin Domagalska</p>
+                    <button id="DSButton" button class=".button-14" type="button" onclick="openWeb('DankSoles')">Download</button>
+                </div>
+            </div>
+ <!-- /////////////////////VR Game///////////////////////// -->
+            <div id="vr" class="VR draggable">
+                <div class="vr-header "">
+                    <button id="VRcloseBtn" class="window-close-btn-DS" onclick="closeWindow(document.getElementById('vr'))">X</button>
+                    <!-- <button id="MinBtn" class="window-min-btn" onclick="minGameWindow(document.getElementById('Dank-sole'), document.getElementById('minButton'))">_</button> -->
+                    <img src="/Img/tab.png" alt="" class="vrIMG ">
+                    <iframe id="vrVideo" width="560" height="315" src="https://www.youtube.com/embed/uFQuhGEWLjU?si=FCiQIguLBxEpaN6T" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p id="VRText">The "Haunted Forest VR" project is a 3D first-person shooter game set in a dark and eerie forest filled with various monsters. The objective of the game is to locate and destroy a randomly spawned object within a time limit of 60 seconds while fending off attacks from enemies. The game was developed as a project for the “3D Modelling and mixed reality applications” course, aiming to provide an immersive and thrilling VR experience.</p>
+                    <button id="VRButton" button class=".button-14" type="button" onclick="openWeb('VR')">Download</button>
+                </div>
+            </div>
 
 
         <div class="taskbar">
