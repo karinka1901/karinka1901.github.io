@@ -100,6 +100,23 @@ h1, h2 {
    
 }
 
+.DSFolder{
+    position: absolute;
+    top: 100%;
+    width: 100px;
+    height: 100px;
+    left: 10%;
+ 
+    background-color: #e7770000;
+    cursor: pointer;
+    /* display: none; */
+
+}
+
+#danksole-desk{
+    width: 100%;
+}
+
 .ItchIcon{
     position: absolute;
     top: 530px;
@@ -350,6 +367,8 @@ h1, h2 {
 #game-folder{
     width: 30%;
     cursor: pointer;
+    
+
 }
 
 #gameButton{
