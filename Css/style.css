@@ -719,6 +719,34 @@ h1, h2 {
 
 
 /*/////////////////////////////////////////DANKSOLES//////////////////////////////////////////*/
+.VRpics{width: auto;
+    height: auto;
+    background-color: #00000000;
+    cursor :move;
+    display: none;
+    position: absolute;
+    /* z-index: 1000; */
+    pointer-events: auto; 
+    left: 30%;
+    top: 100px;}
+
+.VRpics h3{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 40%;
+    color: #000000;
+    font-size: 20px;
+
+}
+
+#carouselVRControls{
+  width: 70%;
+  left: 15%;
+}
+
+#VR-pics{}
+
+
 .VR{
     width: auto;
     height: auto;
@@ -731,6 +759,34 @@ h1, h2 {
     left: 27%;
     top: 100px;
 }
+
+#VRButton{
+
+    position: absolute;
+    margin-top: 82%;
+    margin-left: 10%;
+    cursor: pointer;
+    width: auto;
+    }
+#VRSButton{
+    
+    position: absolute;
+    margin-top: 82%;
+    margin-left: 65%;
+    cursor: pointer;
+    width: auto;
+}
+
+#VRMButton{
+    
+    position: absolute;
+    margin-top: 82%;
+    margin-left: 80%;
+    cursor: pointer;
+    width: auto;
+}
+
+
 
 .vr-header{
     display: flex;
@@ -758,12 +814,27 @@ h1, h2 {
     left: 30px;
 }
 
-#VRButton{
-    position: absolute;
-    margin-top: 82%;
-    margin-left: 42%;
-    cursor: pointer;
+
+.VRmodels{
     width: auto;
+    height: auto;
+    background-color: #00000000;
+    cursor :move;
+    display: none;
+    position: absolute;
+    /* z-index: 1000; */
+    pointer-events: auto; 
+    left: 30%;
+    top: 100px;
+}
+
+.VRmodels h3{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 40%;
+    color: #000000;
+    font-size: 20px;
+
 }
 
 
