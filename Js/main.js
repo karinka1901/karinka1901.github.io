@@ -47,6 +47,7 @@ function closeWindow(wElement) {
 function openn(e){
     e.style.display = 'block';
     e.style.zIndex = '1000';
+    bringToFront(e);
    
 }
 
