@@ -568,6 +568,14 @@ h1, h2 {
     width: auto;
 }
 
+#PButton{
+    position: absolute;
+    margin-top: 80%;
+    margin-left: 82%;
+    cursor: pointer;
+    width: auto;
+}
+
 .window-close-btn-DS{
     position: absolute;
     margin-top: 12px;
