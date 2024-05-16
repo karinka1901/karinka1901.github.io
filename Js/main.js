@@ -150,6 +150,9 @@ function openWeb(websiteId) {
         case "VR":
             websiteUrl = "https://karinka1901.itch.io/haunted-forest-vr"; // URL for other button
             break;
+        case "In":
+            websiteUrl = "https://www.linkedin.com/in/karin-domagalska-a137532aa/"; // URL for other button
+            break;
     
     }
 

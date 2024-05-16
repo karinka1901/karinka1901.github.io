@@ -81,10 +81,32 @@ h1, h2 {
 
 }
 
+.DesktopIcons{
+    /* padding-top: 50px; */
+}
+
+.BinIcon{
+    position: absolute;
+    top: 680px;
+    width: 100px;
+    height: 100px;
+    left: 92%;
+ 
+    background-color: #e7770000;
+    cursor: pointer;
+    /* display: none; */
+
+
+}
+
+#bin{
+    width: 100%;
+
+}
 
 .GitHubIcon{
     position: absolute;
-    top: 360px;
+    top: 390px;
     width: 100px;
     height: 100px;
     left: 30px;
@@ -102,13 +124,14 @@ h1, h2 {
 
 .DSFolder{
     position: absolute;
-    top: 100%;
+    top: 220px;
     width: 100px;
     height: 100px;
-    left: 10%;
+    left: 200px;
  
     background-color: #e7770000;
     cursor: pointer;
+    /* display: none; */
     /* display: none; */
 
 }
@@ -117,9 +140,27 @@ h1, h2 {
     width: 100%;
 }
 
+.LinkedinIcon{
+   
+
+    position: absolute;
+    top: 730px;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+ 
+    background-color: #e7770000;
+    cursor: pointer;
+    /* display: none; */
+
+}
+#linkedIN{
+    width: 100%;
+}
+
 .ItchIcon{
     position: absolute;
-    top: 530px;
+    top: 570px;
     width: 100px;
     height: 100px;
     left: 30px;
@@ -135,10 +176,10 @@ h1, h2 {
 
 .AboutMeIcon{
     position: absolute;
-    top: 680px;
-    width: 100px;
+    top:68px;
+    width: 150px;
     height: 100px;
-    left: 30px;
+    /* left: 30px; */
  
     background-color: #e7770000;
     cursor: pointer;
@@ -147,20 +188,27 @@ h1, h2 {
     width: 100%;
 }
 
+.AboutMeIcon p{
+    /* padding-left:40%; */
+}
+
 .AboutME{
     /* position: relative; */
     /* width: 600px ; */
-    /* left: 10%; */
+
     background-color: #df9dc2;
     margin-top: 2.5%;
+
+    /* position: relative; */
     /* display: none; */
 }
 
 .Mypic{
     background-color: #ed0096;
-    width: 25%;
+    width: 500px;
     position: absolute;
-    left: 40%;
+    left: 39%;
+
 }
 
 #MyPic{
@@ -190,6 +238,20 @@ h1, h2 {
     width: 100%;
 }
 
+.NOTE
+{position: absolute;
+    background-color: #e38ec400;
+    width: 20%;
+    left: 66%;
+    top:60%;
+   
+}
+
+#pinknote{
+    width: 50%;
+    
+}
+
 .MyEdu{
     position: absolute;
     background-color: #e38ec400;
@@ -207,16 +269,20 @@ h1, h2 {
     background-color: #e38ec400;
     width: 30%;
     left: 36.6%;
-    top: 295%;
+    top: 303%;
 }
 
 
 .DesktopFolder{
-    background-color: #e7770000;
     position: absolute;
-    width: 90px;
-    bottom: auto;
+    top: 220px;
+    width: 100px;
+    height: 100px;
     left: 30px;
+ 
+    background-color: #e7770000;
+    cursor: pointer;
+    /* display: none; */
 }
 
 #game-folder-desk{
