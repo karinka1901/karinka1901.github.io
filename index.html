@@ -24,9 +24,12 @@
                 <div id="Portfolio" class="PortfolioF draggable">
                     <img id ="PortfolioTab" src="/Img/folderview.png" alt="">
                     <button id="closeBtn" class="window-close-btn1" onclick="closeWindow(document.getElementById('Portfolio'))">X</button>
-                    <img id ="PurpleFolder" src="/Img/purple_folder.png" alt="" onclick="openn(document.getElementById('Folder'))"></img>
-                    <img id ="GreenFolder" src="/Img/green_folder.png" alt="" onclick="openn(document.getElementById('vr'))"></img>
-                    <img id ="BlueFolder" src="/Img/blue_folder.png" alt="" onclick="openn(document.getElementById('Dank-sole'))"></img>
+                    <img id ="PurpleFolder" src="/Img/Purple.png" alt="" onclick="openn(document.getElementById('Folder'))"></img>
+                    <!-- <p id="purpleT">UNITY 2D</p> -->
+                    <img id ="GreenFolder" src="/Img/Green.png" alt="" onclick="openn(document.getElementById('vr'))"></img>
+                    <!-- <p id="greenT">UNITY 3D/VR</p> -->
+                    <img id ="BlueFolder" src="/Img/Blue.png" alt="" onclick="openn(document.getElementById('Dank-sole'))"></img>
+                    <!-- <p id="blueT">UNREAL<br>ENGINE 5</p> -->
                 </div>
                 <div id="AboutMe" class = "AboutME">
                     <div id = "Me" class = "Mypic draggable">
@@ -169,13 +172,16 @@
                     <!-- <button id="MinBtn" class="window-min-btn" onclick="minGameWindow(document.getElementById('Dank-sole'), document.getElementById('minButton'))">_</button> -->
                     <img src="/Img/tab.png" alt="" class="vrIMG ">
                     <iframe id="vrVideo" width="560" height="315" src="https://www.youtube.com/embed/uFQuhGEWLjU?si=FCiQIguLBxEpaN6T" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p id="VRText">The "Haunted Forest VR" project is a 3D first-person shooter game set in a dark and eerie forest filled with various monsters. The objective of the game is to locate and destroy a randomly spawned object within a time limit of 60 seconds while fending off attacks from enemies. The game was developed as a project for the “3D Modelling and mixed reality applications” course, aiming to provide an immersive and thrilling VR experience.</p>
+                    <p id="VRText">The "Haunted Forest VR" project is a 3D first-person shooter VR game set in a dark and eerie forest filled with various monsters. 
+                       <br> The objective of the game is to locate and destroy a randomly spawned object within a time limit of 60 seconds while fending off attacks from enemies. 
+                       <br>The game was developed as a project for the “3D Modelling and mixed reality applications” course.
+                       <br><br>#Unity #Blender #VR</p>
                     <button id="VRButton" button class=".button-14" type="button" onclick="openWeb('VR')">Download</button>
                     <button id="VRSButton" button class=".button-14" type="button" onclick="openn(document.getElementById('VR-pics'))">Screenshots</button>
                     <button id="VRMButton" button class=".button-14" type="button" onclick="openn(document.getElementById('VR-Models'))">3D Models</button>
                 </div>
             </div>
-            <!-- ////////////////////////////////////////////////vr models -->
+            <!-- ////////////////////////////////////////////////vr pics -->
             <div id="VR-pics" class="VRpics draggable">
                 <h3>Screenshots</h3>
                 <div class="vr-header "">
@@ -214,6 +220,7 @@
                       </div>
                 </div>
             </div>
+               <!-- ////////////////////////////////////////////////vr models -->
             <div id="VR-Models" class="VRmodels draggable">
                 <h3>My 3D Models</h3>
                 <div class="vr-header "">
@@ -251,6 +258,7 @@
                         </a>
                       </div>
                 </div>
+                <h4>Low poly assets modelled and animated in Blender</h4>
             </div>
 
 

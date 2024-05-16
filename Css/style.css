@@ -36,6 +36,22 @@ h1, h2 {
     height: 600px;
 }
 
+#purpleT{
+    position: absolute;
+    top: 35%;
+    left: 11%;
+}
+#blueT{
+    position: absolute;
+    top: 33.5%;
+    left: 44.5%;
+}
+#greenT{
+    position: absolute;
+    top: 35%;
+    left: 76%;
+}
+
 #PurpleFolder{
     position: absolute;
     width: 18%;
@@ -718,7 +734,7 @@ h1, h2 {
 }
 
 
-/*/////////////////////////////////////////DANKSOLES//////////////////////////////////////////*/
+/*/////////////////////////////////////////VR//////////////////////////////////////////*/
 .VRpics{width: auto;
     height: auto;
     background-color: #00000000;
@@ -759,6 +775,8 @@ h1, h2 {
     left: 27%;
     top: 100px;
 }
+
+
 
 #VRButton{
 
@@ -807,11 +825,13 @@ h1, h2 {
 
 #VRText{
     position: absolute;
-    margin-top: 55%;
+    margin-top: 53%;
     margin-left: auto;
     color: #000000;
     font-size: 20px;
-    left: 30px;
+    left: 50px;
+    right: 50px;
+    font-size: 17px;
 }
 
 
@@ -830,10 +850,20 @@ h1, h2 {
 
 .VRmodels h3{
     position: absolute;
-    margin-top: 10%;
+    margin-top: 12%;
     margin-left: 40%;
     color: #000000;
     font-size: 20px;
+
+}
+
+.VRmodels h4{
+    position: absolute;
+    /* margin-top: 1%; */
+    margin-left: 17%;
+    color: #000000;
+    font-size: 17px;
+    top: 80%;
 
 }
 
