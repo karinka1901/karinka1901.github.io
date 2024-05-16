@@ -696,6 +696,28 @@ h1, h2 {
 
     background-color: #f2a9db;
 }
+
+
+.DankSolePics{width: auto;
+    height: auto;
+    background-color: #00000000;
+    cursor :move;
+    display: none;
+    position: absolute;
+    /* z-index: 1000; */
+    pointer-events: auto; 
+    left: 50%;
+    top: 100px;
+}
+
+.carousel{
+    position: absolute;
+    width: 85%;
+    left: 7.5%;
+    top: 20%;
+}
+
+
 /*/////////////////////////////////////////DANKSOLES//////////////////////////////////////////*/
 .VR{
     width: auto;
