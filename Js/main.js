@@ -34,22 +34,37 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 //////////////////////////////////////////////////////////////////
-function closeWindow(wElement) {
+function closeWindow(wElement, vElement = null) {
     // Hide the game container
    wElement.style.display = 'none';
 // document.getElementById('gameW').classList.add('hidden');
 
     // Reset the iframe src
-    document.getElementById('gameFrame').src = "";
+    vElement.src = "";
 }
 
 
-function openn(e){
+function openn(e,v=null){
     e.style.display = 'block';
     e.style.zIndex = '1000';
     bringToFront(e);
+
+    if(v){
+    const iframe = document.getElementById(v);
+    
+    switch (v) {
+        case "DankSolesVideo":
+            iframe.src = "https://www.youtube.com/embed/Z82WRHcB6hw?si=qie1p6fjbOwRgBdh";
+            break;
+        case "DVideo":
+            iframe.src = "https://www.youtube.com/embed/RFExoLWc8Ec?si=kveNybWj7Yepd-D9"; 
+        break;
+        case "vrVideo":
+            iframe.src = "https://www.youtube.com/embed/uFQuhGEWLjU?si=FCiQIguLBxEpaN6T"; 
+        break;
+    }
    
-}
+}}
 
 /////////////////////////////////////////////////////////////
 function startGame() {
@@ -184,4 +199,14 @@ function minGameWindow(windowElement, tabElement) {
 function reopenWindow(windowElement, tabElement){
     windowElement.style.display = 'block';
     tabElement.style.display = 'none';
+}
+
+function openPDF(pdfUrl) {
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }

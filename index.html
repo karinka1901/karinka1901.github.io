@@ -9,7 +9,7 @@
     <script src="/Js/main.js"></script> 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+    <link rel="icon" type="image/x-icon" href="/Img/favicon.ico">
 <body>
     <div class="container-fluid">
         <div class="row">
@@ -24,11 +24,11 @@
                 <div id="Portfolio" class="PortfolioF draggable">
                     <img id ="PortfolioTab" src="/Img/folderview.png" alt="">
                     <button id="closeBtn" class="window-close-btn1" onclick="closeWindow(document.getElementById('Portfolio'))">X</button>
-                    <img id ="PurpleFolder" src="/Img/Purple.png" alt="" onclick="openn(document.getElementById('Folder'))"></img>
+                    <img id ="PurpleFolder" src="/Img/Purple.png" alt="" onclick="openn(document.getElementById('Folder'),'DVideo')"></img>
                     <!-- <p id="purpleT">UNITY 2D</p> -->
-                    <img id ="GreenFolder" src="/Img/Green.png" alt="" onclick="openn(document.getElementById('vr'))"></img>
+                    <img id ="GreenFolder" src="/Img/Green.png" alt="" onclick="openn(document.getElementById('vr'), 'vrVideo')"></img>
                     <!-- <p id="greenT">UNITY 3D/VR</p> -->
-                    <img id ="BlueFolder" src="/Img/Blue.png" alt="" onclick="openn(document.getElementById('Dank-sole'))"></img>
+                    <img id ="BlueFolder" src="/Img/Blue.png" alt="" onclick="openn(document.getElementById('Dank-sole'), 'DankSolesVideo')"></img>
                     <!-- <p id="blueT">UNREAL<br>ENGINE 5</p> -->
                 </div>
                 <div id="AboutMe" class = "AboutME">
@@ -54,20 +54,25 @@
                 </div>
                 <div class="DesktopIcons">
                     <div class="AboutMeIcon">
-                        <img id="aboutmeIcon" src="/Img/cat.png" alt="" onclick="openn(document.getElementById('AboutMe'))">
+                        <img id="aboutmeIcon" src="/Img/Haunted forest(31).png" alt="" onclick="openn(document.getElementById('AboutMe'))">
                         <p>About Me</p>
                         <!-- <img id="MyPic" src="/Img/Haunted forest(7).png" alt=""> -->
                     </div>
+                    <div class="cvIcon">
+                        <img id="cvImg" src="/Img/Document.png" alt="" onclick="openPDF('/Img/CV.pdf')">
+                        <p>My CV</p>
+                        <!-- <img id="MyPic" src="/Img/Haunted forest(7).png" alt=""> -->
+                    </div>
                     <div class="DesktopFolder">
-                        <img id="game-folder-desk" src="/Img/folder.png" alt="Game Folder" class="game-image" onclick="openn(document.getElementById('Portfolio'))">
+                        <img id="game-folder-desk" src="/Img/foldertest.png" alt="Game Folder" class="game-image" onclick="openn(document.getElementById('Portfolio'))">
                         <p>Portfolio</p>
                         <!-- <img id="game-folder-desk" src="/Img/folder.png" alt="Game Folder" class="game-image"> -->
                     </div>
-                    <div class="DSFolder">
+                    <!-- <div class="DSFolder">
                         <img id="danksole-desk" src="/Img/DankSole-shortcit.png"  onclick="openn(document.getElementById('Dank-sole'))">
                         <p>DankSole-<br>Shortcut</p>
                         <!-- <img id="game-folder-desk" src="/Img/folder.png" alt="Game Folder" class="game-image"> -->
-                    </div>
+                   <!-- </div> -->
                     <div class="GitHubIcon">
                         <img id="githubIcon" src="/Img/github.png" alt="" onclick="openWeb('GitHub')">
                         <p>GitHub</p>
@@ -78,7 +83,7 @@
                         <p>Itch.io</p>
                     </div>
                     <div class="BinIcon">
-                        <img id="bin" src="/Img/bin.png" alt="" >
+                        <img id="bin" src="/Img/bin.png" alt="" onclick="openn(document.getElementById('binFolder'))">
                         <p>Recycle Bin</p>
                     </div>
                     
@@ -92,7 +97,7 @@
                <!-- /* //////////////////Daggermeister Folder///////////////////////// */ -->
                 <div id="Folder" class="Folder-Window draggable">
                     <div class="folder-window-header "">
-                        <button id="closeBtn" class="window-close-btn" onclick="closeWindow(document.getElementById('Folder'))">X</button>
+                        <button id="closeBtn" class="window-close-btn" onclick="closeWindow(document.getElementById('Folder'), document.getElementById('DVideo'))">X</button>
                         <button id="MinBtn" class="window-min-btn" onclick="minGameWindow(document.getElementById('Folder'), document.getElementById('minButton'))">_</button>
                         <img src="/Img/tab.png" alt="" class="Folder "></img>
                         <!-- <img id="gameButton" src="/Img/DaggermeisterIcon.png" alt="Game Icon" class="game-icon" onclick="startGame()"> -->
@@ -114,7 +119,7 @@
      <!-- /////////////////////DankSole Game///////////////////////// -->
             <div id="Dank-sole" class="DankSole draggable">
                 <div class="dank-header "">
-                    <button id="DScloseBtn" class="window-close-btn-DS" onclick="closeWindow(document.getElementById('Dank-sole'))">X</button>
+                    <button id="DScloseBtn" class="window-close-btn-DS" onclick="closeWindow(document.getElementById('Dank-sole'), document.getElementById('DankSolesVideo'))">X</button>
                     <!-- <button id="MinBtn" class="window-min-btn" onclick="minGameWindow(document.getElementById('Dank-sole'), document.getElementById('minButton'))">_</button> -->
                     <img src="/Img/tab.png" alt="" class="Dank-Solee ">
                     <iframe id="DankSolesVideo" width="560" height="315" src="https://www.youtube.com/embed/Z82WRHcB6hw?si=qie1p6fjbOwRgBdh" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -157,6 +162,7 @@
                           <span class="sr-only"></span>
                         </a>
                       </div>
+                 
                 </div>
             </div>
 
@@ -168,7 +174,7 @@
  <!-- /////////////////////VR Game///////////////////////// -->
             <div id="vr" class="VR draggable">
                 <div class="vr-header "">
-                    <button id="VRcloseBtn" class="window-close-btn-DS" onclick="closeWindow(document.getElementById('vr'))">X</button>
+                    <button id="VRcloseBtn" class="window-close-btn-DS" onclick="closeWindow(document.getElementById('vr'), document.getElementById('vrVideo'))">X</button>
                     <!-- <button id="MinBtn" class="window-min-btn" onclick="minGameWindow(document.getElementById('Dank-sole'), document.getElementById('minButton'))">_</button> -->
                     <img src="/Img/tab.png" alt="" class="vrIMG ">
                     <iframe id="vrVideo" width="560" height="315" src="https://www.youtube.com/embed/uFQuhGEWLjU?si=FCiQIguLBxEpaN6T" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -261,10 +267,24 @@
                 <h4>Low poly assets modelled and animated in Blender</h4>
             </div>
 
-
+            <div id="binFolder" class="BinFolder draggable">
+              <div class="BIN-header "">
+                  <button id="VRcloseBtn" class="window-close-btn-DS" onclick="closeWindow(document.getElementById('binFolder'))">X</button>
+                  <img src="/Img/tab.png" alt="" class="vrIMG ">
+                  <img id = "doc" src="Img/Document.png" >
+                  <p>Cover <br>Letter(35)</p>
+              </div>
+          </div>
 
         <div class="taskbar">
             <button id="startButton" button class=".button-14" type="button">Start</button>
+            <div id = "taskbarIMG">
+              <img src="/Img/steam.png" alt="">
+              <img src="/Img/discord.png" alt="">
+              <img src="/Img/sound.png" alt="">
+              <img src="/Img/wifi.png" alt="">
+            </div>
+            
             <button id="minButton" button class=".button-14" type="button" onclick="reopenWindow(document.getElementById('Folder'), document.getElementById('minButton'))">Daggermeister</button>
             <button id="minButton1" button class=".button-14" type="button" onclick="reopenWindow(document.getElementById('gameContainer'), document.getElementById('minButton1'))">Game</button>
             <button id="minButton2" button class=".button-14" type="button" onclick="reopenWindow(document.getElementById('Portfolio'), document.getElementById('minButton2'))">Portfolio</button>
@@ -276,7 +296,7 @@
                 My Portfolio
             </div>
             <div class="content">
-                <p>nothing to see here yet</p>
+                <p>nothing to see here yet<br><br><br>Contact info<br>Cv</p>
             
                 <!-- <img src="/Img/logo.png" alt="Popup Image" class="popup-image"> -->
             </div>

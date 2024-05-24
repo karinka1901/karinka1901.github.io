@@ -193,15 +193,29 @@ h1, h2 {
 .AboutMeIcon{
     position: absolute;
     top:68px;
-    width: 150px;
+    width: 106px;
     height: 100px;
-    /* left: 30px; */
+    left: 30px;
  
     background-color: #e7770000;
     cursor: pointer;
 }
  #aboutmeIcon{
     width: 100%;
+}
+
+.cvIcon{
+    position: absolute;
+    top:68px;
+    width: 100px;
+    height: 90px;
+    left: 190px;
+ 
+    background-color: #e7770000;
+    cursor: pointer;
+}
+ #cvImg{
+    width: 83%;
 }
 
 .AboutMeIcon p{
@@ -315,7 +329,7 @@ h1, h2 {
 
 .DesktopFolder{
     position: absolute;
-    top: 220px;
+    top: 242px;
     width: 100px;
     height: 100px;
     left: 30px;
@@ -358,6 +372,18 @@ h1, h2 {
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.5); /* Shadow at the bottom */
 }
 
+
+#taskbarIMG {
+    display: flex;
+    align-items: center;
+    margin-left: 87.5%; /* Shift the images to the right */
+}
+
+#taskbarIMG img {
+    width: 17px; /* Adjust the width as needed */
+    height: auto;
+    margin-left: 10px; /* Add space between the images */
+}
 
 
 /* BUTTON*/
@@ -867,5 +893,34 @@ h1, h2 {
 
 }
 
+
+
+.BinFolder{
+    width: auto;
+    height: auto;
+    background-color: #00000000;
+    cursor :move;
+   /* display: none; */
+    position: absolute;
+    /* z-index: 1000; */
+    pointer-events: auto; 
+    left: 27%;
+    top: 100px;
+}
+
+
+#doc{
+    position: absolute;
+    width: 10%;
+    left: 10%;
+    top: 11%;
+}
+
+.BinFolder p{
+    position: absolute;
+    top: 26%;
+    text-align: center;
+    left: 9%;
+}
 
 
