@@ -900,7 +900,7 @@ h1, h2 {
     height: auto;
     background-color: #00000000;
     cursor :move;
-   /* display: none; */
+   display: none;
     position: absolute;
     /* z-index: 1000; */
     pointer-events: auto; 
@@ -914,6 +914,7 @@ h1, h2 {
     width: 10%;
     left: 10%;
     top: 11%;
+    cursor: pointer;
 }
 
 .BinFolder p{
@@ -921,6 +922,28 @@ h1, h2 {
     top: 26%;
     text-align: center;
     left: 9%;
+    
 }
 
 
+.Cover{
+    width: auto;
+    height: auto;
+    background-color: #00000000;
+    cursor :move;
+   display: none;
+    position: absolute;
+    /* z-index: 1000; */
+    pointer-events: auto; 
+    left: 30%;
+    top: 140px;
+}
+
+.Cover img{
+    width: 130%;
+   
+}
+
+.Cover button{
+    left: 28%;
+}
