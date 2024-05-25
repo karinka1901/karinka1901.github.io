@@ -34,7 +34,8 @@
                 <div id="AboutMe" class = "AboutME">
                     <div id = "Me" class = "Mypic draggable">
                      <img id="MyPic"  src="/Img/Haunted forest(22).png" alt="">
-                     <button id="closeMEBtn" class="window-close-Me" onclick="closeWindow(document.getElementById('AboutMe'))">X</button>
+                     <button id="closeMEBtn" class="window-close-Me" onclick="closeWindows(document.getElementById('AboutMe'), document.getElementById('AboutMeTab'))">X</button>
+
                     </div>
                     <div class = "Mynote draggable">
                         <img id="MyNote"  src="/Img/newskills.png" alt="">
@@ -59,7 +60,7 @@
                         <!-- <img id="MyPic" src="/Img/Haunted forest(7).png" alt=""> -->
                     </div>
                     <div class="cvIcon">
-                        <img id="cvImg" src="/Img/Document.png" alt="" onclick="openPDF('/Img/CV.pdf')">
+                        <img id="cvImg" src="/Img/Document.png" alt="" onclick="openPDF('/Img/CV_Karin Domagalska.pdf')">
                         <p>My CV</p>
                         <!-- <img id="MyPic" src="/Img/Haunted forest(7).png" alt=""> -->
                     </div>
@@ -285,12 +286,28 @@
 
         <div class="taskbar">
             <button id="startButton" button class=".button-14" type="button">Start</button>
+            <div id = "taskbarICONSIMG">
+              <img src="/Img/blenderBW.png" alt="">
+              <img src="/Img/unity.png" alt="">
+              <img src="/Img/ue.png" alt="">
+   
+              <img src="/Img/VScodeBW.png" alt="">
+            </div>
+
+            <div id="AboutMeTab" class="aboutmetab" onclick="toggletabMenu(document.getElementById('AboutMe'))" >
+              <img src="/img/AboutMeTab.png" alt="">
+            </div>
+  
+           
             <div id = "taskbarIMG">
               <img src="/Img/steam.png" alt="">
               <img src="/Img/discord.png" alt="">
               <img src="/Img/sound.png" alt="">
               <img src="/Img/wifi.png" alt="">
             </div>
+
+           
+      
             
             <button id="minButton" button class=".button-14" type="button" onclick="reopenWindow(document.getElementById('Folder'), document.getElementById('minButton'))">Daggermeister</button>
             <button id="minButton1" button class=".button-14" type="button" onclick="reopenWindow(document.getElementById('gameContainer'), document.getElementById('minButton1'))">Game</button>

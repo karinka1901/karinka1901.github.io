@@ -376,7 +376,7 @@ h1, h2 {
 #taskbarIMG {
     display: flex;
     align-items: center;
-    margin-left: 87.5%; /* Shift the images to the right */
+    margin-left: 79.7%; /* Shift the images to the right */
 }
 
 #taskbarIMG img {
@@ -384,6 +384,42 @@ h1, h2 {
     height: auto;
     margin-left: 10px; /* Add space between the images */
 }
+
+#taskbarICONSIMG
+    {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        /* margin-right: 20%;  */
+    }
+#taskbarICONSIMG img{
+    width: 24px; /* Adjust the width as needed */
+    height: auto;
+    margin-left: 15px; 
+}
+
+#vs{
+    width: 300%;
+}
+
+.aboutmetab {
+
+    width:auto;
+    cursor: pointer;
+    position: absolute;
+    
+    /* display: none; */
+}
+.aboutmetab img{
+    width: 55%;
+    cursor: pointer;
+    margin-left: 77%;
+}
+/* #AboutMeTab img{
+    width: 320%;
+    
+
+} */
 
 
 /* BUTTON*/

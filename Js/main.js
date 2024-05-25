@@ -66,6 +66,22 @@ function openn(e,v=null){
    
 }}
 
+// function toggletabMenu(e) {
+//     if (e.style.display === 'block') {
+//         e.style.display = 'none';
+//     } else {
+//         e.style.display = 'block';
+//     }
+// }
+function toggletabMenu(e) {
+    if (window.getComputedStyle(e).display === 'none') {
+        e.style.display = 'block';
+    } else {
+        e.style.display = 'none';
+    }
+}
+
+
 /////////////////////////////////////////////////////////////
 function startGame() {
     // Show the game container
@@ -209,4 +225,10 @@ function openPDF(pdfUrl) {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+}
+
+
+function closeWindows(a,b) {
+    a.style.display = 'none';
+    b.style.display = 'none';
 }
