@@ -6,6 +6,7 @@
     <title>Karin Domagalska Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="games(52).png" type="image/png">
     <script src="main.js"></script> 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -186,6 +187,16 @@
                               </div>
                             </div>
                         </div>
+                        <div class="project-section">
+                            <h2 class="section-label">Raspberry Pi Pico</h2>
+                            <hr class="section-divider">
+                            <div class="file-list">
+                              <div class="file-item"onclick="openThreejsWindow('stressbgone'), closeWindow('project-window-content')">
+                                <img src="Img/games(53).png" alt="">
+                                <p>stress-B<br>-gone.py</p>
+                              </div>
+                            </div>
+                        </div>
 
                       </div>
                       
@@ -216,6 +227,12 @@
                     <iframe id="sus-video-frame" width="560" height="315" src="https://www.youtube.com/embed/6i4P9oitnwk?si=WNm_tdh2X2R70vbr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p id="sus-text">A web-based flight simulator game where your mission is to purify a polluted Earth. Built using Python(Flask), JavaScript, HTML, CSS, and a PostgreSQL database.</p>
                     <button class="play-button" type="button" onclick="openWebsite('SusPlane')">GitHub</button>
+                </div>
+                <div class ="stressbgone game-window" id="stressbgone">
+                    <h2 class ="stressbgone-h2">Stress-B-Gone</h2>
+                   <img src="Img/games(6).gif" alt="" class ="stressbgone-img">
+                    <p class="strssbgone-text">A Raspberry Pi Pico project that detects and analyzes heart rate data to estimate stress levels. Built with MicroPython and integrated with Kubios Cloud for HRV analysis. </p>
+                    <button class="play-button" type="button" onclick="openWebsite('StressBGone')">GitHub</button>
                 </div>
                 </div>
 

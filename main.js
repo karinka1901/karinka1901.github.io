@@ -54,6 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
           case 'SusPlane':
           websiteUrl = "https://github.com/karinka1901/sus-plane-ability"; // URL for other button
           break;
+          case'StressBGone':  
+          websiteUrl = "https://github.com/karinka1901/Stress-B-Gone"; // URL for other button
+          break;
       }
     if (websiteUrl) {
       window.open(websiteUrl, '_blank'); // Opens in a new tab
