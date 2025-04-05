@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
           websiteUrl = "https://github.com/karinka1901/Stress-B-Gone"; // URL for other button
           break;
           case 'CV':
-            websiteUrl = "https://karinka1901.github.io/Img/CV_Karin%20Domagalska-2.pdf"; // URL for other button
+            websiteUrl = "https://karinka1901.github.io/PDF/CV_Karin%20Domagalska-2.pdf"; // URL for other button
             break;
       }
     if (websiteUrl) {
