@@ -57,6 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
           case'StressBGone':  
           websiteUrl = "https://github.com/karinka1901/Stress-B-Gone"; // URL for other button
           break;
+          case 'CV':
+            websiteUrl = "https://karinka1901.github.io/Img/CV_Karin%20Domagalska-2.pdf"; // URL for other button
+            break;
       }
     if (websiteUrl) {
       window.open(websiteUrl, '_blank'); // Opens in a new tab
