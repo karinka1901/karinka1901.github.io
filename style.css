@@ -80,15 +80,18 @@ button {
   .desktop-scene {
     position: absolute;
     z-index: 0;
+    background-color: #cc77b9;
+    
+
 
   }
 
   .desktop-cat {
     position: absolute;
-    top: 20vh;
-    left: 70vh;
+    top: 11rem;
+    left: 40rem;
     transform: scale(0.5);
-    width: 70vh;
+    width: 40rem;
     z-index: 0; 
     cursor: pointer;
   }
@@ -100,9 +103,9 @@ button {
   .desktop-cat-drink {
     position: absolute;
     top: 0rem;
-    left:62vh;
+    left:36rem;
     transform: scale(0.12);
-    width: 70vh;
+    width: 40rem;
     z-index: 3; 
     cursor: pointer;
 
@@ -110,10 +113,10 @@ button {
 
   .desktop-cat-laptop {
     position: absolute;
-    top: 44vh;
-    left: 79vh;
+    top:25rem;
+    left: 45rem;
     transform: scale(0.5);
-    width: 70vh;
+    width: 40rem;
     z-index: 2; 
     cursor: pointer;
 
@@ -152,13 +155,13 @@ button {
 
   .sticky-note{
     position: absolute;
-    top: 10vh;
-    left: 175vh;
+    top: 5rem;
+    left: 80%;
 
-    width: 50vh;
+    width: 15rem;
     z-index: 0; 
     cursor: pointer;
-    width: 25vh;
+   
   }
   .sticky-note:hover{
     transform: scale(1.1);
@@ -177,54 +180,60 @@ top:10%;
 /* LINKEDIN ICON */
 .linkedin-icon {
     position: absolute;
-    left: 2vh;
-    width: 10vh;
-    text-align: center;
+    top: 1.1rem;
+    left: 2rem;
+    width: 5rem;
+    text-align: center;  
 }
 .linkedin-icon img {
     width: 100%;
     height: auto;
     cursor: pointer;
+    padding-bottom: 0.4rem;
 }
 
 .linkedin-icon:hover .linkedin-img {
-    content: url('Img/linkedin-icon-pink.png');
-    width: 11vh;
+    
+  transform: scale(1.2);
   }
 
 /* GITHUB ICON */
 .github-icon {
     position: absolute;
-    top: 20vh;
-    left: 2vh;
-    width: 10vh;
+    top: 12.5rem;
+    left: 2rem;
+    width: 5rem;
     text-align: center;
+
 }
 .github-icon img {
     width: 100%;
     height: auto;
     cursor: pointer;
+    padding-bottom: 0.5rem;
 }
-.github-icon:hover .github-img {
-    content: url('Img/github-icon-pink.png');
-    width: 11vh;
+.github-icon img:hover  {
+
+    transform: scale(1.2);
 }
 /* ITCH.IO ICON */
 .itchio-icon {
     position: absolute;
-    top: 40vh;
-    left: 2vh;
-    width: 10vh;
+    top: 24rem;
+    left: 2rem;
+    width: 5rem;
     text-align: center;
+  
 }
 .itchio-icon img {
     width: 100%;
     height: auto;
     cursor: pointer;
+    padding-bottom: 0.5rem;
 }
 .itchio-icon:hover .itchio-img {
-    content: url('Img/itchio-icon-pink.png');
-    width: 11vh;
+
+  transform: scale(1.2);
   }
 /* ABOUTME ICON */
 .aboutme-icon {
@@ -247,9 +256,9 @@ top:10%;
 /* FOLDER ICONS */
 .game-folder-icon {
     position: absolute;
-    top: 1.5vh;
-    left: 18vh;
-    width: 10vh;
+    top: 1rem;
+    left: 10rem;
+    width: 5.625rem;
     text-align: center;
 }
 .game-folder-icon:hover .folder-img {
@@ -299,20 +308,22 @@ top:10%;
 /* CV ICON */
 .cv-icon {
     position: absolute;
-    top: 60vh;
-    left: 2vh;
-    width: 10vh;
+    top: 36rem;
+    left: 2rem;
+    width: 5rem;
     text-align: center;
+ 
 }
 .cv-icon img {
-    width: 100%;
+    width: 90%;
     height: auto;
     cursor: pointer;
+    padding-bottom: 0.5rem;
 }
 
 .cv-icon:hover .cv-img {
-    content: url('Img/cv-icon-pink.png');
-    width: 11vh;
+
+  transform: scale(1.2);
   }
 
 /* TASKBAR */
@@ -331,6 +342,14 @@ top:10%;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3);
     z-index: 999;
   }
+
+  #taskbar-time {
+    color: black;
+    padding: 2px 6px;
+    margin-left: auto;
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #808080;
+  }
+
    #start-button {
     
     width: 10vh;
@@ -371,7 +390,7 @@ top:10%;
 .window-body{
   height: 40rem;
   width: 50rem;
-  background: rgb(229, 210, 232);
+  background: #fffff6c5;
   color: #3b0066;
   font-size: 14px;
   /* width: 100%; */
@@ -543,8 +562,8 @@ top:10%;
 
   .ripped-note{
     position: absolute;
-    top: -8vh;
-    left: -30vh;
+    top: -9rem;
+    left: -10rem;
     cursor:all-scroll;
     z-index: 5;
   
@@ -788,11 +807,13 @@ top:10%;
 .file-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align:left;
   font-size: 0.9rem;
   color: #3b0066;
   cursor: pointer;
+  width: auto;
+  padding-left: 0.5rem;
 }
 
 .file-card {
@@ -803,17 +824,20 @@ top:10%;
   font-size: 0.85rem;
   color: #3b0066;
   cursor: pointer;
+
+
 }
 
 
 .file-item img {
-  width: 48px;
+  width: 2.7rem;
   height: 55px;
-  /* margin-bottom: 0.3rem; */
-
+  margin-bottom: 0.3rem;
+  object-fit: contain;
 }
 
-.file-item:hover {
+
+.file-item img:hover {
   transform: scale(1.2);
 
 }
