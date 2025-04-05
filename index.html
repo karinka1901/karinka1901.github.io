@@ -5,330 +5,300 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karin Domagalska Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/Css/style.css">
-    <script src="/Js/main.js"></script> 
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script> 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="/Img/favicon.ico">
+    <!-- <link rel="icon" type="image/x-icon" href="Img/favicon.ico"> -->
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 text-center mt-5">
-                <h1>Karin Domagalska</h1>
-                <h4>Game Development Student</h4>
-                <div class = "NOTE draggable">
-                    <img id="pinknote"  src="/Img/notepink.png" alt="">
-                    <!-- <p id="MyNote">Hi! My name is Karin Domagalska and I am a Game Development student at the Metropolia University of Applied Sciences. I am passionate about creating games. </p> -->
-                </div>
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/RFExoLWc8Ec?si=kveNybWj7Yepd-D9" title="YouTube video player" frameborder="0"  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                <div id="Portfolio" class="PortfolioF draggable">
-                    <img id ="PortfolioTab" src="/Img/folderview.png" alt="">
-                    <button id="closeBtn" class="window-close-btn1" onclick="closeWindow(document.getElementById('Portfolio'))">X</button>
-                    <img id ="PurpleFolder" src="/Img/Purple.png" alt="" onclick="openn(document.getElementById('Folder'),'DVideo')"></img>
-                    <!-- <p id="purpleT">UNITY 2D</p> -->
-                    <img id ="GreenFolder" src="/Img/Green.png" alt="" onclick="openn(document.getElementById('vr'), 'vrVideo')"></img>
-                    <!-- <p id="greenT">UNITY 3D/VR</p> -->
-                    <img id ="BlueFolder" src="/Img/Blue.png" alt="" onclick="openn(document.getElementById('Dank-sole'), 'DankSolesVideo')"></img>
-                    <!-- <p id="blueT">UNREAL<br>ENGINE 5</p> -->
-                </div>
-                <div id="AboutMe" class = "AboutME">
-                    <div id = "Me" class = "Mypic draggable">
-                     <img id="MyPic"  src="/Img/Haunted forest(22).png" alt="">
-                     <button id="closeMEBtn" class="window-close-Me" onclick="closeWindows(document.getElementById('AboutMe'), document.getElementById('AboutMeTab'))">X</button>
+    <!-- <img src="Img/cat-bg (2).png" alt="" class ="desktop-cat"> -->
+    
+    <div class="desktop-scene">
+        <img src="Img/cat (3).png" alt="" class="desktop-cat">
+        <img src="Img/scd.png" alt="" class="desktop-cat-drink">
+        <img src="Img/laptop.png" alt="" class="desktop-cat-laptop">
+        <audio id="meow-sound" src="Sfx/cat-meow.mp3" preload="auto"></audio>
+        <img src="Img/cat-bubble.png" alt="" class ="cat-bubble">
+        <p class="cat-bubble-text">hello!</p>
+    </div>
 
+    <img src="Img/sticky-note.png" alt="" class ="sticky-note draggable">
+
+    <div class ="main-wrqapper">
+        <div class="container-fluid">
+            <div class ="row">
+                <div class="col-12 text-center mt-5">   
+                    <div class ="title-text">
+                        <h1 id="chrome-text">Karin Domagalska</h1>
+                        <h4>Game Developer</h4> 
                     </div>
-                    <div class = "Mynote draggable">
-                        <img id="MyNote"  src="/Img/newskills.png" alt="">
-                        <button id="closeMEBtn" class="window-close-Me" onclick="closeWindow(document.getElementById('AboutMe'))">X</button>
-                        <!-- <p id="MyNote">Hi! My name is Karin Domagalska and I am a Game Development student at the Metropolia University of Applied Sciences. I am passionate about creating games. </p> -->
-                       </div>
-                       <div class = "MyEdu draggable">
-                        <img id="Myedu"  src="/Img/edunew.png" alt="">
-                        <button id="closeMEBtn" class="window-close-Me" onclick="closeWindow(document.getElementById('AboutMe'))">X</button>
-                        <!-- <p id="MyNote">Hi! My name is Karin Domagalska and I am a Game Development student at the Metropolia University of Applied Sciences. I am passionate about creating games. </p> -->
-                       </div>
-                       <div class = "MyInfo draggable">
-                        <img id="Myinfo"  src="/Img/aboutme (2).png" alt="">
-                        <button id="closeMEBtn" class="window-close-Me" onclick="closeWindow(document.getElementById('AboutMe'))">X</button>
-                        <!-- <p id="MyNote">Hi! My name is Karin Domagalska and I am a Game Development student at the Metropolia University of Applied Sciences. I am passionate about creating games. </p> -->
-                       </div>
-                </div>
-                <div class="DesktopIcons">
-                    <div class="AboutMeIcon">
-                        <img id="aboutmeIcon" src="/Img/Haunted forest(31).png" alt="" onclick="openn(document.getElementById('AboutMe'))">
-                        <p>About Me</p>
-                        <!-- <img id="MyPic" src="/Img/Haunted forest(7).png" alt=""> -->
-                    </div>
-                    <div class="cvIcon">
-                        <img id="cvImg" src="/Img/Document.png" alt="" onclick="openPDF('/Img/CV_Karin Domagalska.pdf')">
-                        <p>My CV</p>
-                        <!-- <img id="MyPic" src="/Img/Haunted forest(7).png" alt=""> -->
-                    </div>
-                    <div class="DesktopFolder">
-                        <img id="game-folder-desk" src="/Img/foldertest.png" alt="Game Folder" class="game-image" onclick="openn(document.getElementById('Portfolio'))">
-                        <p>Portfolio</p>
-                        <!-- <img id="game-folder-desk" src="/Img/folder.png" alt="Game Folder" class="game-image"> -->
-                    </div>
-                    <!-- <div class="DSFolder">
-                        <img id="danksole-desk" src="/Img/DankSole-shortcit.png"  onclick="openn(document.getElementById('Dank-sole'))">
-                        <p>DankSole-<br>Shortcut</p>
-                        <!-- <img id="game-folder-desk" src="/Img/folder.png" alt="Game Folder" class="game-image"> -->
-                   <!-- </div> -->
-                    <div class="GitHubIcon">
-                        <img id="githubIcon" src="/Img/github.png" alt="" onclick="openWeb('GitHub')">
-                        <p>GitHub</p>
-                        <!-- <img id="MyPic" src="/Img/Haunted forest(7).png" alt=""> -->
-                    </div>
-                    <div class="ItchIcon">
-                        <img id="itchIcon" src="/Img/itchLogo.png" alt="" onclick="openWeb('Itch.io')">
-                        <p>Itch.io</p>
-                    </div>
-                    <div class="BinIcon">
-                        <img id="bin" src="/Img/bin.png" alt="" onclick="openn(document.getElementById('binFolder'))">
-                        <p>Recycle Bin</p>
-                    </div>
-                    
-                    <div class="LinkedinIcon">
-                        <img id="linkedIN" src="/Img/linkedin.png" onclick="openWeb('In')"">
-                        <p>LinkedIn</p>
-                        <!-- <img id="game-folder-desk" src="/Img/folder.png" alt="Game Folder" class="game-image"> -->
-                    </div>
-                    
-                </div>
-               <!-- /* //////////////////Daggermeister Folder///////////////////////// */ -->
-                <div id="Folder" class="Folder-Window draggable">
-                    <div class="folder-window-header "">
-                        <button id="closeBtn" class="window-close-btn" onclick="closeWindow(document.getElementById('Folder'), document.getElementById('DVideo'))">X</button>
-                        <button id="MinBtn" class="window-min-btn" onclick="minGameWindow(document.getElementById('Folder'), document.getElementById('minButton'))">_</button>
-                        <img src="/Img/tab.png" alt="" class="Folder "></img>
-                        <!-- <img id="gameButton" src="/Img/DaggermeisterIcon.png" alt="Game Icon" class="game-icon" onclick="startGame()"> -->
-                        <iframe id="DVideo"  width="560" height="315" src="https://www.youtube.com/embed/RFExoLWc8Ec?si=kveNybWj7Yepd-D9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <p id="DaggerText">Daggermeister is a 2D platformer that combines precision dagger-throwing and teleportation. The goal is to collect 6 blue gems in orfder to unlock the next level. The game is heavily inspired by “Daggerhood”. It was made in Unity as a part of a school project.</p>
-                        <button id="playDButton" button class=".button-14" type="button" onclick="startGame()">Play</button>
-                        <!-- <img id ="video-button" src="/Img/video.jpg" alt="" onclick="openWeb('Youtube')"> -->
-                    </div>
-                </div> 
-            <!-- /////////////////////Daggermeister Game///////////////////////// -->
-            <div id="gameContainer" class="window-container draggable">
-                <div class="window-header ""></div>
-                <button id="closeBtn" class="window-close-btn" onclick="closeWindow(document.getElementById('gameContainer'))">X</button>
-                <!-- <button id="MinBtn" class="window-min-btn" onclick="minGameWindow(document.getElementById('gameContainer'), document.getElementById('minButton1'))">_</button> -->
-                <img id="GameTab" src="/Img/tab.png" alt="" class="Folder ">
-                    <iframe id="gameFrame" src="" style="border:0; width:960px; height:700px;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-                </div>
-            </div>
-     <!-- /////////////////////DankSole Game///////////////////////// -->
-            <div id="Dank-sole" class="DankSole draggable">
-                <div class="dank-header "">
-                    <button id="DScloseBtn" class="window-close-btn-DS" onclick="closeWindow(document.getElementById('Dank-sole'), document.getElementById('DankSolesVideo'))">X</button>
-                    <!-- <button id="MinBtn" class="window-min-btn" onclick="minGameWindow(document.getElementById('Dank-sole'), document.getElementById('minButton'))">_</button> -->
-                    <img src="/Img/tab.png" alt="" class="Dank-Solee ">
-                    <iframe id="DankSolesVideo" width="560" height="315" src="https://www.youtube.com/embed/Z82WRHcB6hw?si=qie1p6fjbOwRgBdh" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p id="DankSolesText">A mini souls-like clone made in Unreal Engine 5 as a part of the school project.<br>There's only one level in the game. The goal is to explore <br> the map, kill the enemies and fight the main boss. <br><br>Created by me and Markku Inkinen.</p>
-                    <button id="DSButton" button class=".button-14" type="button" onclick="openWeb('DankSoles')">Download</button>
-                    <button id="PButton" button class=".button-14" type="button" onclick="openn(document.getElementById('Dank-sole-pics'))">Pictures</button>
-                </div>
-            </div>
-            <div id="Dank-sole-pics" class="DankSolePics draggable">
-                <div class="dank-header "">
-                    <img src="/Img/tab.png" alt="" class="Dank-Solee ">
-                    <button id="DScloseBtn" class="window-close-btn-DS" onclick="closeWindow(document.getElementById('Dank-sole-pics'))">X</button>
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img class="d-block w-100" src="/Img/WhatsApp Image 2024-05-13 at 01.19.11_d333826d.jpg" alt="First slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="/Img/WhatsApp Image 2024-05-13 at 01.20.10_da329ee6.jpg" alt="Second slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="/Img/WhatsApp Image 2024-05-13 at 01.20.09_766bb804.jpg" alt="Third slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="/Img/Screenshot 2024-05-13 011543.png" alt="Third slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="/Img/Screenshot 2024-05-13 011627.png" alt="Third slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="/Img/Screenshot 2024-05-13 011705.png" alt="Third slide">
-                          </div>
+                    <!-- desktop icons  -->
+                    <div class ="desktop-icons" > 
+                        <!--left side-->
+                        <div class="linkedin-icon">
+                            <img src="Img/linkedin-icon.png" alt="" onclick="openWebsite('Linkedin')" class="linkedin-img">
+                            <p>Linkedin</p>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                      </div>
-                 
-                </div>
+                        <div class="github-icon">
+                            <img src="Img/games.png" alt="" onclick="openWebsite('GitHub')" class="github-img">
+                            <p>Github</p>
+                        </div>
+                        <div class="itchio-icon">
+                            <img src="Img/itchio-icon.png" alt="" onclick="openWebsite('Itchio')" class="itchio-img">
+                            <p>Itch.io</p>
+                        </div>
+                        <div class="aboutme-icon" onclick="openWindow('aboutme-folder-window')">
+                            <img src="Img/folder.png" alt="" class="folder-img">
+                            <p>About Me</p>
+                        </div>
+                         <!--right side-->
+                        <div class="game-folder-icon" onclick="openWindow('game-folder-window','game-window-content')">
+                            <img  src="Img/folder.png" alt="" class="folder-img">
+                            <p >Games</p>
+                        </div>
+                        <div class="project-folder-icon" onclick="openWindow('project-folder-window', 'project-window-content')">
+                            <img src="Img/folder.png" alt="" class="folder-img">
+                            <p>Other projects
+                        </div>
+                        <div class="art-folder-icon" onclick="openWindow('art-folder-window')">
+                            <img id="art" src="Img/folder.png" alt="" class="folder-img">
+                            <p>Art</p>
+                        </div>
+                        <div class="cv-icon">
+                            <img src="Img/cv-icon.png" alt="" class="cv-img" onclick="openPDF('/Img/CV_Karin Domagalska.pdf')">
+                            <p>cv.pdf</p>
+                        </div>
+                    </div>  
             </div>
-
-
-           
-             
+            <div class="desktop-window draggable" id="game-folder-window">
+                <!-- <img src="Img/tab.png" alt=""> -->
+                <div class="window-header" id="game-window-header">
+                    <p>Games</p>
+                    <div class="window-buttons ">
+                        <button id="return-button" type="button" onclick="returnButton('.game-window', 'game-folder-window', 'game-window-content')" >←</button>     
+                        <button id="minimize-button" type="button">_</button>      
+                        <button id="restore-button" type="button">❐</button>
+                        <button id="close-button" type="button" onclick="closeGameWindow('.game-window', 'game-folder-window')">X</button> 
+                    </div>
+                </div>
+                <div class="window-body" id="">
+  
                
-       
- <!-- /////////////////////VR Game///////////////////////// -->
-            <div id="vr" class="VR draggable">
-                <div class="vr-header "">
-                    <button id="VRcloseBtn" class="window-close-btn-DS" onclick="closeWindow(document.getElementById('vr'), document.getElementById('vrVideo'))">X</button>
-                    <!-- <button id="MinBtn" class="window-min-btn" onclick="minGameWindow(document.getElementById('Dank-sole'), document.getElementById('minButton'))">_</button> -->
-                    <img src="/Img/tab.png" alt="" class="vrIMG ">
-                    <iframe id="vrVideo" width="560" height="315" src="https://www.youtube.com/embed/uFQuhGEWLjU?si=FCiQIguLBxEpaN6T" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p id="VRText">The "Haunted Forest VR" project is a 3D first-person shooter VR game set in a dark and eerie forest filled with various monsters. 
-                       <br> The objective of the game is to locate and destroy a randomly spawned object within a time limit of 60 seconds while fending off attacks from enemies. 
-                       <br>The game was developed as a project for the “3D Modelling and mixed reality applications” course.
-                       <br><br>#Unity #Blender #VR</p>
-                    <button id="VRButton" button class=".button-14" type="button" onclick="openWeb('VR')">Download</button>
-                    <button id="VRSButton" button class=".button-14" type="button" onclick="openn(document.getElementById('VR-pics'))">Screenshots</button>
-                    <button id="VRMButton" button class=".button-14" type="button" onclick="openn(document.getElementById('VR-Models'))">3D Models</button>
+                <div class="game-window-content" id="game-window-content">
+                    <div class="game-card" onclick="openGameContentWindow('game-window-content', 'daggermeister-video', 'daggermeister-video-frame')">
+                        <img src="Img/daggermeister1.png" alt="">
+                        <p>Daggermeister</p>
+                    </div>
+                    <div class="game-card">
+                        <img src="Img/danksole2.png" alt="" onclick="openGameContentWindow('game-window-content', 'danksole-video', 'danksole-video-frame')">
+                        <p>DankSole</p>
+                    </div>
+                    <div class="game-card">
+                        <img src="Img/hauntedforest2.png" alt="" onclick="openGameContentWindow('game-window-content', 'haunted-video', 'haunted-video-frame')">
+                        <p>Haunted Forest VR</p>
+                    </div>   
                 </div>
+                <div class ="daggermeister-video game-window" id="daggermeister-video">
+                    <iframe class="video" id="daggermeister-video-frame"  width="560" height="315" src="https://www.youtube.com/embed/RFExoLWc8Ec?si=kveNybWj7Yepd-D9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p id="DaggerText">Daggermeister is a 2D platformer that combines precision dagger-throwing and teleportation. <br>The goal is to collect 6 blue gems in orfder to unlock the next level. </br>The game is heavily inspired by “Daggerhood”. </p>
+                    <button class="play-button" type="button" onclick="playGame(document.getElementById('gameContainer'))">Play</button>
+                </div>
+                <div class ="daggermeister-game game-window" id="daggermeister-game">
+                        <img src="Img/games(9).png" alt="" class ="ripped-note draggable">
+                    <iframe class="game" id="daggermeister-game-frame" src="" style="border:0; width:960px; height:700px;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                </div>
+
+                <div class ="danksole-video game-window" id="danksole-video">
+                    <iframe class="video" id="danksole-video-frame"  width="560" height="315" src="https://www.youtube.com/embed/Z82WRHcB6hw?si=qie1p6fjbOwRgBdh" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p id="danksole-text">A mini souls-like clone made in Unreal Engine 5 as a part of the school project.<br>There's only one level in the game. The goal is to explore the map, kill the enemies and fight the main boss. <br>Created by me and Markku Inkinen.</p>
+                    <button class="play-button" type="button" onclick="openWebsite('DankSole')">Download</button>
+                </div>
+                <div class ="haunted-video game-window" id="haunted-video">
+                    <iframe class="video" id="haunted-video-frame"  width="560" height="315" src="https://www.youtube.com/embed/uFQuhGEWLjU?si=FCiQIguLBxEpaN6T" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p id="haunted-text">The "Haunted Forest VR" project is a 3D first-person shooter VR game set in a dark and eerie forest filled with various monsters. 
+                        <br> The objective of the game is to locate and destroy a randomly spawned object within a time limit of 60 seconds while fending off attacks from enemies. 
+                      </p>
+                    <button class="play-button"type="button" onclick="openWebsite('VR')">Download</button>
+                </div>
+                </div>
+        </div>
+ 
+            
             </div>
-            <!-- ////////////////////////////////////////////////vr pics -->
-            <div id="VR-pics" class="VRpics draggable">
-                <h3>Screenshots</h3>
-                <div class="vr-header "">
-                    <img src="/Img/tab.png" alt="" class="VRR ">
-                    <button id="DScloseBtn" class="window-close-btn-DS" onclick="closeWindow(document.getElementById('VR-pics'))">X</button>
-                    <div id="carouselVRControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img class="d-block w-100" src="/Img/Screenshot 2024-05-06 213319.png" alt="First slide">
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="/Img/Screenshot 2024-05-06 222657.png" alt="Third slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="/Img/Screenshot 2024-05-06 222716.png" alt="Third slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="/Img/Screenshot 2024-05-06 215707.png" alt="Third slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="/Img/Screenshot 2024-05-12 002235.png" alt="Third slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="/Img/Screenshot 2024-05-12 002015.png" alt="Third slide">
+            <div class="desktop-window draggable" id="project-folder-window">
+                <div class="window-header" id="project-window-header">
+                    <p>Other projects</p>
+                    <div class="window-buttons">
+                        <button id="return-button-project" type="button" onclick="projectReturnButton()">←</button>  
+                        <button id="minimize-button" type="button">_</button>      
+                        <button id="restore-button" type="button">❐</button>
+                        <button id="close-button" type="button" onclick="closeProjectWindow()">X</button> 
+                    </div>
+                </div>
+                <div class="window-body" ></div>
+                <div class="scroll-wrapper">
+
+                <div class="project-window-content" id="project-window-content">
+                    <div class="project-window-content">
+                        <div class="project-section">
+                          <h2 class="section-label">Web 3D Modelling</h2>
+                          <hr class="section-divider">
+                          <div class="file-list">
+                            <div class="file-item" onclick="openThreejsWindow('hyena-build','hyena-build-frame'), closeWindow('project-window-content')">
+                              <img src="Img/games(25).png" alt="">
+                              <p>Hyena.gltf</p>
+                            </div>
+                            <div class="file-item" onclick="openThreejsWindow('barrel-build','barrel-build-frame'), closeWindow('project-window-content')">
+                              <img src="Img/games(25).png" alt="">
+                              <p>Barrel.gltf</p>
+                            </div>
+                            
                           </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselVRControls" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselVRControls" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                      </div>
-                </div>
-            </div>
-               <!-- ////////////////////////////////////////////////vr models -->
-            <div id="VR-Models" class="VRmodels draggable">
-                <h3>My 3D Models</h3>
-                <div class="vr-header "">
-                    <img src="/Img/tab.png" alt="" class="VRR ">
-                    <button id="DScloseBtn" class="window-close-btn-DS" onclick="closeWindow(document.getElementById('VR-Models'))">X</button>
-                    <div id="carouselVRModels" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="/Img/2024-05-17-01-38-00.gif" alt="First slide">
-                              </div>
-                              
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="/Img/2024-05-17-01-46-51.gif" alt="Third slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="/Img/2024-05-17-01-49-03.gif" alt="Third slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="/Img/Screenshot 2024-05-12 001546.png" alt="Third slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="/Img/Screenshot 2024-05-12 030139.png" alt="Third slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="/Img/Screenshot 2024-05-12 001847.png" alt="Third slide">
+                      
+                        <div class="project-section">
+                          <h2 class="section-label">Data Structures & Algorithms (C++)</h2>
+                          <hr class="section-divider">
+                          <div class="file-list">
+                            <div class="file-item" onclick="openThreejsWindow('ttc-video','ttc-video-frame'), closeWindow('project-window-content')">
+                              <img src="Img/c++.png" alt="">
+                              <p>TicTac<br>Toe.cpp</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="project-section">
+                            <h2 class="section-label">Server Programming Node.js/Unity</h2>
+                            <hr class="section-divider">
+                            <div class="file-list">
+                              <div class="file-item" onclick="openThreejsWindow('sponge-video','sponge-video-frame'), closeWindow('project-window-content')">
+                                <img src="Img/unityfile.png" alt="">
+                                <p>sPONGe.exe</p>
                               </div>
                             </div>
-                        <a class="carousel-control-prev" href="#carouselVRModels" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselVRModels" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
+                        </div>
+                        <div class="project-section">
+                            <h2 class="section-label">Web-based flight simulator</h2>
+                            <hr class="section-divider">
+                            <div class="file-list">
+                              <div class="file-item"onclick="openThreejsWindow('sus-video','sus-video-frame'), closeWindow('project-window-content')">
+                                <img src="Img/html.png" alt="">
+                                <p>susPLANE<br>ability.html</p>
+                              </div>
+                            </div>
+                        </div>
+
                       </div>
+                      
                 </div>
-                <h4>Low poly assets modelled and animated in Blender</h4>
+            </div>
+                
+                <div class ="hyena-build threejs-window" id="hyena-build">
+                    <iframe class="hyena" id="hyena-build-frame" src="https://karinka1901.github.io/Three.js/hyena/build/" style="border:0; width:500px; height:500px;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                </div>
+                <div class ="barrel-build threejs-window" id="barrel-build">
+                    <iframe class="hyena" id="barrel-build-frame" src="https://karinka1901.github.io/Three.js/barrel/build/" style="border:0; width:500px; height:500px;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                </div> 
+                <div class ="ttc-video game-window" id="ttc-video">
+                    <iframe id="ttc-video-frame" width="560" height="315" src="https://www.youtube.com/embed/NFWZ0o9xLNk?si=ntkiw7An3vDC0zEL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p id="ttc-text">This project is a Tic-Tac-Toe game implemented in C++ utilizing the ImGUI library. The game uses STL data structures such as 2D vector to manage the board state and map for managing player data such as name, symbol, and game outcome, which are saved and read from a JSON file. The game offers two modes: a classic 3x3 grid and an extended 5x5 grid where the objective is to get four symbols in a row to win. In 5x5 mode computational efficiency is optimized through the implementation of the minimax algorithm augmented with alpha-beta pruning as well as through prioritising moves that are closer to the centre.</p>
+                    <button class="play-button" type="button" onclick="openWebsite('TicTacToe')">GitHub</button>
+                </div>
+                <div class ="sponge-video game-window" id="sponge-video">
+                    <iframe id="sponge-video-frame" width="560" height="315" src="https://www.youtube.com/embed/f1ycquokbRY?si=0VGvKUb39GizDM8-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p id="sponge-text">A multiplayer 2D Pong game with a spongy twist! <br>
+
+                        In SpongE, the paddles are sponges, the ball is a bubble, and the arena is a deep-sea battleground inspired by a certain famous sponge.
+                        
+                       <br> Built with Unity, Node.js, and MySQL for player data and scores, using SocketIOUnity for real-time multiplayer networking.</p>
+                    <button class="play-button" type="button" onclick="openWebsite('SpongE')">GitHub</button>
+                </div>
+                <div class ="sus-video game-window" id="sus-video">
+                    <iframe id="sus-video-frame" width="560" height="315" src="https://www.youtube.com/embed/6i4P9oitnwk?si=WNm_tdh2X2R70vbr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p id="sus-text">A web-based flight simulator game where your mission is to purify a polluted Earth. Built using Python(Flask), JavaScript, HTML, CSS, and a PostgreSQL database.</p>
+                    <button class="play-button" type="button" onclick="openWebsite('SusPlane')">GitHub</button>
+                </div>
+                </div>
+
+            <div class="desktop-window draggable" id="art-folder-window">
+                <div class="window-header" id="art-window-header">
+                    <p>Art</p>
+                    <div class="window-buttons">
+                        <button id="minimize-button" type="button">_</button>      
+                        <button id="restore-button" type="button">❐</button>
+                        <button id="close-button" type="button" onclick="closeWindow('art-folder-window')">X</button> 
+                    </div>
+                </div>
+                <div class="window-body"></div>
+
+                <div class ="art-window" id="art-window">
+                
+            </div>
+            </div>
+            <div class="desktop-window draggable" id="aboutme-folder-window">
+                <div class="window-header" id="aboutme-window-header">
+                    <p>About Me</p>
+                    <div class="window-buttons">
+                        <button id="minimize-button" type="button">_</button>      
+                        <button id="restore-button" type="button">❐</button>
+                        <button id="close-button" type="button" onclick="closeWindow('aboutme-folder-window')">X</button> 
+                    </div>
+                </div>
+                <div class="window-body" ></div>
+                <div class="aboutme-window-content" id="aboutme-window-content">
+                    <div class="aboutme-card" >
+                        <img src="Img/games(14).png" alt="">
+                        <p>About Me</p>
+                    </div>
+                    <div class="aboutme-card">
+                        <img src="Img/games(15).png" alt="">
+                        <p>Education</p>
+                    </div>
+                    <div class="aboutme-card">
+                        <img src="Img/games(16).png" alt="" >
+                        <p>Skills</p>
+                    </div>
+                    <div class="aboutme-card">
+                        <img src="Img/games(17).png" alt="" >
+                        <p>Experience</p>
+                    </div>     
+                </div>
             </div>
 
-            <div id="binFolder" class="BinFolder draggable">
-              <div class="BIN-header "">
-                  <button id="VRcloseBtn" class="window-close-btn-DS" onclick="closeWindow(document.getElementById('binFolder'))">X</button>
-                  <img src="/Img/tab.png" alt="" class="vrIMG ">
-                  <img id = "doc" src="Img/Document.png" onclick="openn(document.getElementById('coverLetter'))">
-                  <p>Cover <br>Letter(35)</p>
-              </div>
-            </div>
 
-            <div id="coverLetter" class="Cover draggable">
-              <div class="cover-header "">
-                  <button id="CLcloseBtn" class="window-close-btn-DS" onclick="closeWindow(document.getElementById('coverLetter'))">X</button>
-                  <img src="/Img/coverletter.png" alt="" >
-              </div>
             </div>
-
-        <div class="taskbar">
-            <button id="startButton" button class=".button-14" type="button">Start</button>
-            <div id = "taskbarICONSIMG">
-              <img src="/Img/blenderBW.png" alt="">
-              <img src="/Img/unity.png" alt="">
-              <img src="/Img/ue.png" alt="">
-   
-              <img src="/Img/VScodeBW.png" alt="">
-            </div>
-
-            <div id="AboutMeTab" class="aboutmetab" onclick="toggletabMenu(document.getElementById('AboutMe'))" >
-              <img src="/img/AboutMeTab.png" alt="">
-            </div>
-  
-           
-            <div id = "taskbarIMG">
-              <img src="/Img/steam.png" alt="">
-              <img src="/Img/discord.png" alt="">
-              <img src="/Img/sound.png" alt="">
-              <img src="/Img/wifi.png" alt="">
-            </div>
-
-           
-      
-            
-            <button id="minButton" button class=".button-14" type="button" onclick="reopenWindow(document.getElementById('Folder'), document.getElementById('minButton'))">Daggermeister</button>
-            <button id="minButton1" button class=".button-14" type="button" onclick="reopenWindow(document.getElementById('gameContainer'), document.getElementById('minButton1'))">Game</button>
-            <button id="minButton2" button class=".button-14" type="button" onclick="reopenWindow(document.getElementById('Portfolio'), document.getElementById('minButton2'))">Portfolio</button>
-            <div class="clock"></div>
-        </div>
-        <div id="popupMenu" class="popup-menu">
-            <div class="title-bar">
-                <img src="/Img/logo.png" alt="Popup Image" class="popup-image">
-                My Portfolio
-            </div>
-            <div class="content">
-                <p>nothing to see here yet<br><br><br>Contact info<br>Cv</p>
-            
-                <!-- <img src="/Img/logo.png" alt="Popup Image" class="popup-image"> -->
-            </div>
-        </div>
+            <div class="taskbar">
+                <button id="start-button"  type="button">Start</button>
+                <div id = "taskbar-icons">
+                  <img src="/Img/blender.png" alt="">
+                  <img src="/Img/unity.png" alt="">
+                  <img src="/Img/ue.png" alt=""> 
+                  <img src="/Img/vsBW.png" alt="">
+                  <img src="/Img/discord.png" alt="">
+                    <img src="/Img/steam.png" alt="">
+                  
+                </div>
+    
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<!-- 
+<div class="y2k-window">
+    <div class="title-bar">💿 PinkOS v2.1</div>
+    <div class="window-content">
+      <p>Welcome to your retro future 🌌</p>
+      <button class="y2k-button">Enter</button>
+    </div>
+  </div> -->
