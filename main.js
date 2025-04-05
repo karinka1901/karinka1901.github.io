@@ -235,6 +235,7 @@ function projectReturnButton() {
   closeWindow('ttc-video');
   closeWindow('sponge-video');
   closeWindow('sus-video');
+  closeWindow('stressbgone');
 
   // Clear iframe srcs
   closeThreejsWindow('hyena-build');
