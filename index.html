@@ -13,7 +13,7 @@
     <!-- <link rel="icon" type="image/x-icon" href="Img/favicon.ico"> -->
 <body>
     <!-- <img src="Img/cat-bg (2).png" alt="" class ="desktop-cat"> -->
-    
+    <div class = "desktop-wrapper">
     <div class="desktop-scene">
         <img src="Img/cat (3).png" alt="" class="desktop-cat">
         <img src="Img/scd.png" alt="" class="desktop-cat-drink">
@@ -40,7 +40,7 @@
 </div>
         <div class="desktop-window draggable" id="me-tab">
             <div class="window-header" id="me-tab-header">
-                <p>About Me</p>
+                <p>ฅ^•ﻌ•^ฅ</p>
                 <div class="window-buttons">
                     <button id="minimize-button" type="button">_</button>      
                     <button id="restore-button" type="button">❐</button>
@@ -54,7 +54,7 @@
         </div>
         <div class="desktop-window draggable" id="aboutme-tab">
             <div class="window-header" id="aboutme-tab-header">
-                <p>About Me</p>
+                <p>AboutMe.docx</p>
                 <div class="window-buttons">
                     <button id="minimize-button" type="button">_</button>      
                     <button id="restore-button" type="button">❐</button>
@@ -69,6 +69,33 @@
                     wide range of interests, that really
                     enjoys creating things with code and
                     bringing new ideas to life.</p>
+            </div>
+        </div>
+        <div class="desktop-window draggable" id="skills-tab">
+            <div class="window-header" id="skills-tab-header">
+                <p>Skills.exe</p>
+                <div class="window-buttons">
+                    <button id="minimize-button" type="button">_</button>      
+                    <button id="restore-button" type="button">❐</button>
+                    <button id="close-button" type="button" >X</button> 
+                </div>
+            </div>
+            <div class="skills-window-body">     
+                <img src="Img/skills game.png" alt="" class ="skills-img">
+                <img src="Img/shark.png" alt="" class ="shark-bubble">
+                <div class="skill-bubbles">
+                    <img src="Img/unityskill.png" alt="" class ="unityskill-bubble">  
+                    <img src="Img/xrskill.png" alt="" class ="xrskill-bubble">
+                    <img src="Img/cppskill.png" alt="" class ="cppskill-bubble">
+                    <img src="Img/pythonskill.png" alt="" class ="pyskill-bubble">
+
+                    <img src="Img/blenderskill.png" alt="" class ="blenderskill-bubble">
+                    <img src="Img/ueskill.png" alt="" class ="ueskill-bubble">
+                    <img src="Img/threejsskill.png" alt="" class ="threeskill-bubble">
+                    <img src="Img/htmlskioll.png" alt="" class ="htmlskill-bubble">
+                    
+                </div>
+                
             </div>
         </div>
        
@@ -96,7 +123,7 @@
                             <p>Itch.io</p>
                         </div>
                         <div class="aboutme-icon" onclick="openWindow('aboutme-folder-window')">
-                            <img src="Img/folder.png" alt="" class="folder-img">
+                            <img src="Img/outme.png" alt="" class="folder-img">
                             <p>About Me</p>
                         </div>
                          <!--right side-->
@@ -110,7 +137,7 @@
                         </div>
                         <div class="art-folder-icon" onclick="openWindow('art-folder-window')">
                             <img id="art" src="Img/folder.png" alt="" class="folder-img">
-                            <p>Art</p>
+                            <p>Work Experience</p>
                         </div>
                         <div class="cv-icon">
                             <img src="Img/games(56).png" alt="" class="cv-img" onclick="openWebsite('CV')">
@@ -129,7 +156,7 @@
                         <button id="close-button" type="button" onclick="closeGameWindow('.game-window', 'game-folder-window')">X</button> 
                     </div>
                 </div>
-                <div class="window-body" id="">
+                <div class="gamewindow-body" id="">
   
                
                 <div class="game-window-content" id="game-window-content">
@@ -150,6 +177,7 @@
                     <iframe class="video" id="daggermeister-video-frame"  width="560" height="315" src="https://www.youtube.com/embed/RFExoLWc8Ec?si=kveNybWj7Yepd-D9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p id="DaggerText">Daggermeister is a 2D platformer that combines precision dagger-throwing and teleportation. <br>The goal is to collect 6 blue gems in orfder to unlock the next level. </br>The game is heavily inspired by “Daggerhood”. </p>
                     <button class="play-button" type="button" onclick="playGame(document.getElementById('gameContainer'))">Play</button>
+                    <button class="play-button" type="button" onclick="openWebsite('Daggermeister')">Read More</button>
                 </div>
                 <div class ="daggermeister-game game-window" id="daggermeister-game">
                         <img src="Img/games(60).png" alt="" class ="ripped-note draggable">
@@ -160,6 +188,7 @@
                     <iframe class="video" id="danksole-video-frame"  width="560" height="315" src="https://www.youtube.com/embed/Z82WRHcB6hw?si=qie1p6fjbOwRgBdh" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p id="danksole-text">A mini souls-like clone made in Unreal Engine 5 as a part of the school project.<br>There's only one level in the game. The goal is to explore the map, kill the enemies and fight the main boss. <br>Created by me and Markku Inkinen.</p>
                     <button class="play-button" type="button" onclick="openWebsite('DankSole')">Download</button>
+                    <button class="play-button" type="button" onclick="openWebsite('Danksole')">Read More</button>
                 </div>
                 <div class ="haunted-video game-window" id="haunted-video">
                     <iframe class="video" id="haunted-video-frame"  width="560" height="315" src="https://www.youtube.com/embed/uFQuhGEWLjU?si=FCiQIguLBxEpaN6T" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -167,6 +196,7 @@
                         <br> The objective of the game is to locate and destroy a randomly spawned object within a time limit of 60 seconds while fending off attacks from enemies. 
                       </p>
                     <button class="play-button"type="button" onclick="openWebsite('VR')">Download</button>
+                    <button class="play-button" type="button" onclick="openWebsite('Haunted')">Read More</button>
                 </div>
                 </div>
         </div>
@@ -239,7 +269,7 @@
                             <hr class="section-divider">
                             <div class="file-list">
                               <div class="file-item"onclick="openThreejsWindow('stressbgone'), closeWindow('project-window-content')">
-                                <img src="Img/games(53).png" alt="">
+                                <img src="Img/games(66).png" alt="">
                                 <p>stress-B<br>-gone.py</p>
                               </div>
                             </div>
@@ -344,7 +374,7 @@
         </div>
     </div>
   
-
+</div>
 
 
 

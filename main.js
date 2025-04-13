@@ -60,6 +60,15 @@ document.addEventListener("DOMContentLoaded", function () {
           case 'CV':
             websiteUrl = "https://karinka1901.github.io/PDF/CV_Karin%20Domagalska-2.pdf"; // URL for other button
             break;
+          case 'Daggermeister':
+            websiteUrl = "https://github.com/karinka1901/Daggermeister"; // URL for other button
+            break;
+          case 'Haunted':
+            websiteUrl = "https://github.com/karinka1901/HauntedForest-VR";
+            break;
+          case 'Danksole':
+            websiteUrl = "https://github.com/markkuinkinen/Dank-Souls";
+            break;
       }
     if (websiteUrl) {
       window.open(websiteUrl, '_blank'); // Opens in a new tab
