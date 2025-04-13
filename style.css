@@ -974,19 +974,19 @@ padding-bottom: 1rem;
 }
 
 #construction-tab{
-  width: 30%;
-  height: 40%;
+  width: 22%;
+  height:20%;
   position: absolute;
-  top: 23%;
-  left: 84%;
+  top: 15%;
+  left: 87%;
 }
 #construction-tab-header{
   width: 98.5%;
 }
 
 #me-tab{
-  width: 27.3%;
-  height: 56%;
+  width: 28.7%;
+  height: 60%;
   position: absolute;
   left: 50%;
     top: 50%;
@@ -999,14 +999,85 @@ padding-bottom: 1rem;
 
 .me-window-body{
   position: absolute;
+  width: auto;
   font-size: 20px;
   top:3rem;
-  left: 0.5rem;
+  left: 0.8rem;
 }
 
 .me-img{
-  top: -28rem;
+  /* top: -28rem;
   left: -39rem;
+  position: absolute; */
+  width:99%;
+  /* margin-bottom: 10rem; */
+
+  padding-bottom: 1rem;
+
+
+
+  box-shadow: inset -2px -2px 0px  #6b6a6a50, inset 2px 2px 0px #fcfbfb38;
+
+}
+
+.me-window-body p{
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+}
+
+#aboutme-tab{
+  width: 28.7%;
+  height: 56%;
   position: absolute;
-  transform: scale(0.3);
+  left: 80%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+#aboutme-tab-header{
+  width: 98.5%;
+}
+
+.aboutme-window-body{
+  position: absolute;
+  width: auto;
+  font-size: 20px;
+  top:3rem;
+  left: 0.8rem;
+}
+
+.aboutme-img{
+  /* top: -28rem;
+  left: -39rem;
+  position: absolute; */
+  width:98%;
+  /* padding-right: 0.3rem; */
+  /* margin-bottom: 10rem; */
+
+  /* padding-bottom: 1rem;
+*/
+padding-top: 0.5rem;
+
+
+
+
+  box-shadow: inset -2px -2px 0px  #6b6a6a50, inset 2px 2px 0px #fcfbfb38; 
+
+}
+
+.aboutme-window-body p{
+  margin-bottom: 0.1rem;
+  cursor: pointer;
+}
+.aboutme-h{
+  position: absolute;
+  top: 8rem;
+  left: 13rem ;
+}
+
+.aboutme-text{
+  width: 70%;
+  position: absolute;
+  top: 11rem;
+  left: 5rem ;
 }
