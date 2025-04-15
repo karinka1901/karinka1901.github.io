@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
       function swapCat() {
         const cat = document.querySelector(".desktop-cat");
-        cat.src="Img/cat1.gif";
+        cat.src="https://karinka1901.github.io/Img/cat1.gif";
         setTimeout(() => {
-          cat.src="Img/cat3.gif";
+          cat.src="https://karinka1901.github.io/Img/cat3.gif";
       }, 1200);
       };
 
