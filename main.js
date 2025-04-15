@@ -39,6 +39,11 @@ document.addEventListener("DOMContentLoaded", function () {
         cat.style.display = "block";
       }
 
+      function hideCatfriend(){
+        const cat = document.querySelector(".desktop-scene");
+        cat.style.display = "none";
+      }
+
     function openWebsite(websiteId) {
       let websiteUrl;
   
