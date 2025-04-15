@@ -22,6 +22,11 @@
         <img src="Img/cat-bubble.png" alt="" class ="cat-bubble">
         <p class="cat-bubble-text">hello!</p>
     </div> -->
+     <div class="desktop-scene">
+        <img src="Img/AllCats animation 5.gif" alt="" class="desktop-cat" onclick="swapCat()">
+        <audio id="meow-sound" src="Sfx/cat-meow.mp3" preload="auto"></audio>
+        
+    </div>
 
     <!-- <img src="Img/sticky_note.png" alt="" class ="sticky-note draggable"> -->
     <!-- <div class="desktop-window draggable" id="construction-tab">
@@ -51,7 +56,7 @@
                 <div class="window-buttons">
                     <button id="minimize-button" type="button">_</button>      
                     <button id="restore-button" type="button">❐</button>
-                    <button id="close-button" type="button" onclick="closeWindow('aboutme-section')">X</button> 
+                    <button id="close-button" type="button" onclick="closeWindow('aboutme-section'), showCatfriend()">X</button> 
                 </div>
             </div>
             <div class="me-window-body">
@@ -65,7 +70,7 @@
                 <div class="window-buttons">
                     <button id="minimize-button" type="button">_</button>      
                     <button id="restore-button" type="button">❐</button>
-                    <button id="close-button" type="button" onclick="closeWindow('aboutme-section')">X</button> 
+                    <button id="close-button" type="button" onclick="closeWindow('aboutme-section'),showCatfriend()">X</button> 
                 </div>
             </div>
             <div class="aboutme-window-body">
@@ -84,7 +89,7 @@
                 <div class="window-buttons">
                     <button id="minimize-button" type="button">_</button>      
                     <button id="restore-button" type="button">❐</button>
-                    <button id="close-button" type="button" onclick="closeWindow('aboutme-section')">X</button> 
+                    <button id="close-button" type="button" onclick="closeWindow('aboutme-section'), showCatfriend()">X</button> 
                 </div>
             </div>
             <div class="skills-window-body">     

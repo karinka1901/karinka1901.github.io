@@ -26,6 +26,19 @@ document.addEventListener("DOMContentLoaded", function () {
       const meowSound = document.getElementById("meow-sound");
       meowSound.play();}
 
+      function swapCat() {
+        const cat = document.querySelector(".desktop-cat");
+        cat.src="/karinka1901.github.io/Img/AllCats animation 3.gif";
+        setTimeout(() => {
+          cat.src="/karinka1901.github.io/Img/AllCats animation 5.gif";
+      }, 1200);
+      };
+
+      function showCatfriend(){
+        const cat = document.querySelector(".desktop-scene");
+        cat.style.display = "block";
+      }
+
     function openWebsite(websiteId) {
       let websiteUrl;
   

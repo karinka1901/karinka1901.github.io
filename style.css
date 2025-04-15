@@ -94,8 +94,11 @@ button {
 
   .desktop-scene {
     position: absolute;
+    top: 65%;
+    left: 83%;
     z-index: 0;
     background-color: #cc77b9;
+    display: none;
     
 
 
@@ -103,16 +106,21 @@ button {
 
   .desktop-cat {
     position: absolute;
-    top: 11rem;
-    left: 40rem;
+    /* top: 11rem;
+    left: 40rem; */
     transform: scale(0.5);
-    width: 40rem;
+   
     z-index: 0; 
     cursor: pointer;
+    width: 320px; /* 8x scale */
+  height: 320px;
+  image-rendering: pixelated; /* crispy pixels */
+  image-rendering: crisp-edges;
   }
 
   .desktop-cat:hover{
     transform: scale(0.55);
+
   }
 
   .desktop-cat-drink {
