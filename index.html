@@ -14,17 +14,17 @@
 <body>
     <!-- <img src="Img/cat-bg (2).png" alt="" class ="desktop-cat"> -->
     <div class = "desktop-wrapper">
-    <div class="desktop-scene">
+    <!-- <div class="desktop-scene">
         <img src="Img/cat (3).png" alt="" class="desktop-cat">
         <img src="Img/scd.png" alt="" class="desktop-cat-drink">
         <img src="Img/laptop.png" alt="" class="desktop-cat-laptop">
         <audio id="meow-sound" src="Sfx/cat-meow.mp3" preload="auto"></audio>
         <img src="Img/cat-bubble.png" alt="" class ="cat-bubble">
         <p class="cat-bubble-text">hello!</p>
-    </div>
+    </div> -->
 
     <!-- <img src="Img/sticky_note.png" alt="" class ="sticky-note draggable"> -->
-    <div class="desktop-window draggable" id="construction-tab">
+    <!-- <div class="desktop-window draggable" id="construction-tab">
         <div class="window-header" id="construction-tab-header">
             <p>IMPORTANT</p>
             <div class="window-buttons">
@@ -37,14 +37,21 @@
             <p>My portfolio is still under construction. 
             <p>ฅ^•ﻌ•^ฅ</p>
         </div>
-</div>
+</div> -->
+<div id="aboutme-section" class="aboutme-section">
+    <div class="aboutme-language draggable">
+ <img src="Img/planet.png" alt="" class="planet-lang-img">
+ <img src="Img/Sleepy.png" alt="" class="cat-lang-img" onclick="meow()">
+ <img src="Img/langs.png" alt="" class="lang-img">
+ <audio id="meow-sound" src="Sfx/cat-meow.mp3" preload="auto"></audio>
+        </div>
         <div class="desktop-window draggable" id="me-tab">
             <div class="window-header" id="me-tab-header">
                 <p>ฅ^•ﻌ•^ฅ</p>
                 <div class="window-buttons">
                     <button id="minimize-button" type="button">_</button>      
                     <button id="restore-button" type="button">❐</button>
-                    <button id="close-button" type="button" >X</button> 
+                    <button id="close-button" type="button" onclick="closeWindow('aboutme-section')">X</button> 
                 </div>
             </div>
             <div class="me-window-body">
@@ -58,7 +65,7 @@
                 <div class="window-buttons">
                     <button id="minimize-button" type="button">_</button>      
                     <button id="restore-button" type="button">❐</button>
-                    <button id="close-button" type="button" >X</button> 
+                    <button id="close-button" type="button" onclick="closeWindow('aboutme-section')">X</button> 
                 </div>
             </div>
             <div class="aboutme-window-body">
@@ -77,7 +84,7 @@
                 <div class="window-buttons">
                     <button id="minimize-button" type="button">_</button>      
                     <button id="restore-button" type="button">❐</button>
-                    <button id="close-button" type="button" >X</button> 
+                    <button id="close-button" type="button" onclick="closeWindow('aboutme-section')">X</button> 
                 </div>
             </div>
             <div class="skills-window-body">     
@@ -97,6 +104,7 @@
                 </div>
                 
             </div>
+        </div>
         </div>
        
     <div class ="main-wrqapper">
@@ -122,7 +130,7 @@
                             <img src="Img/games(59).png" alt="" onclick="openWebsite('Itchio')" class="itchio-img">
                             <p>Itch.io</p>
                         </div>
-                        <div class="aboutme-icon" onclick="openWindow('aboutme-folder-window')">
+                        <div class="aboutme-icon" onclick="openWindow('aboutme-section')">
                             <img src="Img/outme.png" alt="" class="folder-img">
                             <p>About Me</p>
                         </div>
@@ -162,15 +170,15 @@
                 <div class="game-window-content" id="game-window-content">
                     <div class="game-card" onclick="openGameContentWindow('game-window-content', 'daggermeister-video', 'daggermeister-video-frame')">
                         <img src="Img/daggermeister1.png" alt="">
-                        <p>Daggermeister</p>
+                        <p> </p>
                     </div>
                     <div class="game-card">
                         <img src="Img/danksole2.png" alt="" onclick="openGameContentWindow('game-window-content', 'danksole-video', 'danksole-video-frame')">
-                        <p>DankSole</p>
+                        <p> </p>
                     </div>
                     <div class="game-card">
                         <img src="Img/hauntedforest2.png" alt="" onclick="openGameContentWindow('game-window-content', 'haunted-video', 'haunted-video-frame')">
-                        <p>Haunted Forest VR</p>
+                        <p> </p>
                     </div>   
                 </div>
                 <div class ="daggermeister-video game-window" id="daggermeister-video">
@@ -219,7 +227,7 @@
                 <div class="project-window-content" id="project-window-content">
                     <div class="project-window-content">
                         <div class="project-section">
-                          <h2 class="section-label">Web 3D Modelling</h2>
+                          <h2 class="section-label">Web 3D Modelling: BLENDER | THREE.JS</h2>
                           <hr class="section-divider">
                           <div class="file-list">
                             <div class="file-item" onclick="openThreejsWindow('hyena-build','hyena-build-frame'), closeWindow('project-window-content')">
@@ -235,7 +243,7 @@
                         </div>
                       
                         <div class="project-section">
-                          <h2 class="section-label">Data Structures & Algorithms (C++)</h2>
+                          <h2 class="section-label">Data Structures & Algorithms: C++</h2>
                           <hr class="section-divider">
                           <div class="file-list">
                             <div class="file-item" onclick="openThreejsWindow('ttc-video','ttc-video-frame'), closeWindow('project-window-content')">
@@ -245,7 +253,7 @@
                           </div>
                         </div>
                         <div class="project-section">
-                            <h2 class="section-label">Server Programming Node.js/Unity</h2>
+                            <h2 class="section-label">Server Programming: NODE.JS | UNITY | C#</h2>
                             <hr class="section-divider">
                             <div class="file-list">
                               <div class="file-item" onclick="openThreejsWindow('sponge-video','sponge-video-frame'), closeWindow('project-window-content')">
@@ -255,7 +263,7 @@
                             </div>
                         </div>
                         <div class="project-section">
-                            <h2 class="section-label">Web-based flight simulator</h2>
+                            <h2 class="section-label">Web-based flight simulator: HTML/CSS/JS | PYTHON</h2>
                             <hr class="section-divider">
                             <div class="file-list">
                               <div class="file-item"onclick="openThreejsWindow('sus-video','sus-video-frame'), closeWindow('project-window-content')">
@@ -265,7 +273,7 @@
                             </div>
                         </div>
                         <div class="project-section">
-                            <h2 class="section-label">Raspberry Pi Pico</h2>
+                            <h2 class="section-label">Raspberry Pi Pico: MICROPYTHON</h2>
                             <hr class="section-divider">
                             <div class="file-list">
                               <div class="file-item"onclick="openThreejsWindow('stressbgone'), closeWindow('project-window-content')">
@@ -315,7 +323,7 @@
 
             <div class="desktop-window draggable" id="art-folder-window">
                 <div class="window-header" id="art-window-header">
-                    <p>Art</p>
+                    <p>Work Experience</p>
                     <div class="window-buttons">
                         <button id="minimize-button" type="button">_</button>      
                         <button id="restore-button" type="button">❐</button>

@@ -22,6 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     });
 
+    function meow() {
+      const meowSound = document.getElementById("meow-sound");
+      meowSound.play();}
+
     function openWebsite(websiteId) {
       let websiteUrl;
   

@@ -1018,9 +1018,9 @@ padding-bottom: 1rem;
   width: 28.7%;
   height: 60%;
   position: absolute;
-  left: 50%;
+  left: 42%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     
 }
 
@@ -1060,9 +1060,9 @@ padding-bottom: 1rem;
   width: 28.7%;
   height: 56%;
   position: absolute;
-  left: 80%;
+  left: 72%;
     top: 55%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
 }
 
 #aboutme-tab-header{
@@ -1116,13 +1116,13 @@ padding-top: 0.5rem;
 
 
 #skills-tab{
-  width: 28.7%;
-  height: 68%;
+  width: 22%;
+  height: 54%;
   position: absolute;
-  left: 10%;
-    top: 20%;
+  left: 15%;
+  top: 52%;
  
-    transform: scale(0.7);
+    /* transform: scale(0.7); */
 }
 
 #skills-tab-header{
@@ -1166,7 +1166,7 @@ margin-top: 1rem;
   transform: scale(1.5);
 }
 
-/* Specific bubble positions */
+
 .unityskill-bubble {
   top: 10%;
   left: 12%;
@@ -1226,4 +1226,50 @@ margin-top: 1rem;
 
 .shark-bubble:hover {
   transform: rotate(0deg) scale(1.05);
+}
+
+.aboutme-language{
+  position: absolute;
+  background-color: #ded5cd;
+  left: 89%;
+  top: 66%;
+}
+.cat-lang-img {
+  position: absolute;
+  width: 128px; /* 8x scale */
+  height: 128px;
+  image-rendering: pixelated; /* crispy pixels */
+  image-rendering: crisp-edges;
+  z-index: 50;
+  cursor: pointer;
+}
+.planet-lang-img{
+  width: 128px; /* 8x scale */
+  height: 128px;
+  image-rendering: pixelated; /* crispy pixels */
+  image-rendering: crisp-edges;
+  position: absolute;
+  top: 7rem;
+  left: 0rem;
+  z-index: 49;
+}
+
+.aboutme-language:hover .cat-lang-img {
+  content: url("Img/Sleepy2.png");
+ 
+}
+.lang-img {
+  top: -8rem;
+  position: absolute;
+  width: 128px; /* 8x scale */
+  height: 128px;
+  image-rendering: pixelated; /* crispy pixels */
+  image-rendering: crisp-edges;
+  z-index: 9999;
+  cursor: pointer;
+  display: none;
+}
+
+.aboutme-language:hover .lang-img {
+  display: block;
 }
