@@ -178,10 +178,10 @@ button {
 
   .sticky-note{
     position: absolute;
-    top: 5rem;
-    left: 80%;
+    top: 2rem;
+    left: 89%;
 
-    width: 15rem;
+    width: 10rem;
     z-index: 0; 
     cursor: pointer;
    
